@@ -1,0 +1,104 @@
+% mainfile: ../master_thesis_GW.tex
+\chapter{On shell renormalisation of the effective potential}
+
+One of the main topic of this thesis is to show a coherent way to renormalize a conformal theory 
+without explicit mass term in the on-shell scheme. \\
+
+
+To calculate on-shell renormalisation we need to calculate self energy. 
+However, it turns out, that simple calculation of self energy fails the test of 
+comparison between the zero-momentum limit of the self energy and the second derivative 
+of the effective potential. \\
+Namely, it schould be safisfied that:
+\begin{equation}
+\lim\limits_{p^2\to 0}\Sigma(p^2)=\frac{\partial^2V_{eff}}{\partial\varphi_1^2},
+\end{equation}
+\todo{napisać ile wychodzi}
+but it is not the case. \\
+
+However, from the \MSbar considerations, we know that $\Phi$ have non-zero VEV, let us 
+call it $v$. 
+Let us rotate $\Phi$ in such a way, that $\langle\varphi_1\rangle=v$ and $\langle\varphi_2\rangle 
+= 0$, where now $v$ is real. \\
+Keeping this in mind, we can rewrite Lagransian in terms of shifted fields $\varphi_1$, 
+$\varphi_2$ which have both zero VEV, now VEV is explicitly in the Lagransian:
+\begin{align}
+\mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+ 
+\frac{1}{2}(\partial_\mu(\varphi_1+v) - eA_\mu\varphi_2)^2\\
++\frac{1}{2}(\partial_\mu\varphi_2+eA_\mu(\varphi_1+v))^2
+-\cl\lambda((\varphi_1+v)^2+\varphi_2^2)^2. \notag
+\end{align}
+
+This breaks the symmetry, but now there are more interaction terms in the Lagransian and this leads 
+to different self energy, now consistent with the second derivative of the effective potential, 
+as will be shown in \ref{}. \\ 
+
+Following \cite{Coleman1973} we put the mass counterterm even though initialy the mass term 
+was not present in the Lagransian. It will turn out to be crutial in \ref{}. \\ 
+The Lagransian with $\dZphi$, $\dZl$ and $\dZm$ counterterms looks like this:
+
+\begin{align}
+\mathcal{L_R} = &-\frac{1}{4}F_{\mu\nu}F^{\mu\nu} \\
++(1+ \dZ)&(\frac{1}{2}(\partial_\mu(\varphi_1+v) - eA_\mu\varphi_2)^2
++\frac{1}{2}(\partial_\mu\varphi_2+eA_\mu(\varphi_1+v))^2) \notag \\
+-(1+\dZ)^2&\cl(\lambda+\dl)((\varphi_1+v)^2+\varphi_2^2)^2  \notag \\
++ \dm &c_m((\varphi_1+v)^2+\varphi_2^2).
+\end{align}
+
+%We will write with the convention that:
+%\begin{equation}
+%\dl=\dZl\lambda
+%\end{equation}
+
+Separating the terms with the first power of renormalisation constants and second power of 
+$\varphi_1$, we obtain correction to the self energy equal to:
+\begin{equation}
+\dS=-6\cl v^2(2\lambda\dZphi+\dl)+\cm\dm-p^2\dZphi,
+\end{equation}
+
+where $p^2 = \partial_\mu \varphi_1\partial^\mu\varphi_1$.
+
+
+Separating the terms with the first power of renormalisation constants and first power of 
+$\varphi_1$, we obtain correction to the tadpole equal to:
+\begin{equation}
+\dT=-4\cl v^3(2\lambda\dZphi+\dl)+2v\cm\dm
+\end{equation}
+
+First approuch is to impose renormalisation conditions resembling clissical on-shell ($M_P$ 
+stands for physical mass):
+\begin{align}
+T+\dT &= 0 \\
+\Rep{\Sigma(p^2=M_P^2)} + \Rep{\dS(p^2=M_P^2)} &= M_P^2 \\
+\frac{\textrm{d}\Sigma}{\textrm{d}p^2}(p^2=M_P^2) &= 0
+\end{align}
+
+We will denote $\frac{\textrm{d}\Sigma}{\textrm{d}p^2}$ as $\Sigma'$. \\
+
+This gives us:
+\begin{align}
+\dm &= \frac{1}{4\cm}\left(-\Rep{\Sigma(M_P^2)}+M_P^2+\frac{3}{v}T+M_P^2\Rep{\Sigma'(M_P^2)}
+\right)\\
+\dl &= \frac{1}{8\cl v^3}\left(v\Rep{\Sigma(M_P^2)}-T-(16\cl\lambda v^3+M_P^2v)\Rep{\Sigma'(M_P^2)}
+\right)\\
+\dZphi &= \Rep{\Sigma'(M_P^2)}
+\end{align}
+
+
+
+
+\section{"Zero momentum" approuch}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
