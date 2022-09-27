@@ -2,15 +2,16 @@
 \chapter{On shell renormalisation of the effective potential}
 
 One of the main topic of this thesis is to show a coherent way to renormalize a conformal theory 
-without explicit mass term in the on-shell scheme. \\
+without explicit mass term in the on-shell scheme. Along the way, we will also discuss 
+the case with explicit mass term, for comparison.\\
 
-
+\section{Finite momentum approach}\label{finite momentum}
 To calculate on-shell renormalisation we need to calculate self energy. 
 However, it turns out, that simple calculation of self energy fails the test of 
 comparison between the zero-momentum limit of the self energy and the second derivative 
 of the effective potential. \\
 Namely, it schould be safisfied that:
-\begin{equation}
+\begin{equation}\label{second_derivativ_condition}
 \lim\limits_{p^2\to 0}\Sigma(p^2)=\frac{\partial^2V_{eff}}{\partial\varphi_1^2},
 \end{equation}
 \todo{napisać ile wychodzi}
@@ -20,29 +21,29 @@ However, from the \MSbar considerations, we know that $\Phi$ have non-zero VEV, 
 call it $v$. 
 Let us rotate $\Phi$ in such a way, that $\langle\varphi_1\rangle=v$ and $\langle\varphi_2\rangle 
 = 0$, where now $v$ is real. \\
-Keeping this in mind, we can rewrite Lagransian in terms of shifted fields $\varphi_1$, 
-$\varphi_2$ which have both zero VEV, now VEV is explicitly in the Lagransian:
-\begin{align}
+Keeping this in mind, we can rewrite Lagrangian in terms of shifted fields $\varphi_1$, 
+$\varphi_2$ which have both zero VEV, now VEV is explicitly in the Lagrangian:
+\begin{align}\label{no_mass_term}
 \mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+ 
 \frac{1}{2}(\partial_\mu(\varphi_1+v) - eA_\mu\varphi_2)^2\\
 +\frac{1}{2}(\partial_\mu\varphi_2+eA_\mu(\varphi_1+v))^2
 -\cl\lambda((\varphi_1+v)^2+\varphi_2^2)^2. \notag
 \end{align}
 
-This breaks the symmetry, but now there are more interaction terms in the Lagransian and this leads 
+This breaks the symmetry, but now there are more interaction terms in the Lagrangian and this leads 
 to different self energy, now consistent with the second derivative of the effective potential, 
 as will be shown in \ref{}. \\ 
 
 Following \cite{Coleman1973} we put the mass counterterm even though initialy the mass term 
-was not present in the Lagransian. It will turn out to be crutial in \ref{}. \\ 
-The Lagransian with $\dZphi$, $\dZl$ and $\dZm$ counterterms looks like this:
+was not present in the Lagrangian. It will turn out to be crutial in \ref{}. \\ 
+The Lagrangian with $\dZ$, $\dl$ and $\dm$ counterterms looks like this:
 
 \begin{align}
 \mathcal{L_R} = &-\frac{1}{4}F_{\mu\nu}F^{\mu\nu} \\
-+(1+ \dZ)&(\frac{1}{2}(\partial_\mu(\varphi_1+v) - eA_\mu\varphi_2)^2
+&+(1+ \dZ)(\frac{1}{2}(\partial_\mu(\varphi_1+v) - eA_\mu\varphi_2)^2
 +\frac{1}{2}(\partial_\mu\varphi_2+eA_\mu(\varphi_1+v))^2) \notag \\
--(1+\dZ)^2&\cl(\lambda+\dl)((\varphi_1+v)^2+\varphi_2^2)^2  \notag \\
-+ \dm &c_m((\varphi_1+v)^2+\varphi_2^2).
+&-(1+\dZ)^2\cl(\lambda+\dl)((\varphi_1+v)^2+\varphi_2^2)^2  \notag \\
+&-c_m\dm((\varphi_1+v)^2+\varphi_2^2).
 \end{align}
 
 %We will write with the convention that:
@@ -53,42 +54,299 @@ The Lagransian with $\dZphi$, $\dZl$ and $\dZm$ counterterms looks like this:
 Separating the terms with the first power of renormalisation constants and second power of 
 $\varphi_1$, we obtain correction to the self energy equal to:
 \begin{equation}
-\dS=-6\cl v^2(2\lambda\dZphi+\dl)+\cm\dm-p^2\dZphi,
+\dS=-12\cl v^2(2\lambda\dZphi+\dl)-2\cm\dm-p^2\dZphi,
 \end{equation}
 
-where $p^2 = \partial_\mu \varphi_1\partial^\mu\varphi_1$.
+where $p^2 = -\partial_\mu \varphi_1\partial^\mu\varphi_1$.
 
 
 Separating the terms with the first power of renormalisation constants and first power of 
 $\varphi_1$, we obtain correction to the tadpole equal to:
 \begin{equation}
-\dT=-4\cl v^3(2\lambda\dZphi+\dl)+2v\cm\dm
+\dT=-4\cl v^3(2\lambda\dZphi+\dl)-2\cm\dm v
 \end{equation}
 
-First approuch is to impose renormalisation conditions resembling clissical on-shell ($M_P$ 
-stands for physical mass):
+
+
+First approach is to impose renormalisation conditions resembling clissical on-shell.
+Here, $\Sigma'$ stands for $\frac{\textrm{d}\Sigma}{\textrm{d}p^2}$ and, if not 
+stated otherwise, 
+$\Sigma$, $\dS$ and $\Sigma'$ are evaluated at $p^2 = M_P^2$, where 
+$M_P$ stands for physical mass. We denote real part as $\Rep{}$.
 \begin{align}
 T+\dT &= 0 \\
-\Rep{\Sigma(p^2=M_P^2)} + \Rep{\dS(p^2=M_P^2)} &= M_P^2 \\
-\frac{\textrm{d}\Sigma}{\textrm{d}p^2}(p^2=M_P^2) &= 0
+\Rep{\Sigma} + \Rep{\dS} &= 0 \\
+\Rep{\Sigma'} &= 0
 \end{align}
-
-We will denote $\frac{\textrm{d}\Sigma}{\textrm{d}p^2}$ as $\Sigma'$. \\
 
 This gives us:
 \begin{align}
-\dm &= \frac{1}{4\cm}\left(-\Rep{\Sigma(M_P^2)}+M_P^2+\frac{3}{v}T+M_P^2\Rep{\Sigma'(M_P^2)}
+\dm &= \frac{-1}{4\cm}\left(\Rep{\Sigma}-\frac{3}{v}T-M_P^2\Rep{\Sigma'}
 \right)\\
-\dl &= \frac{1}{8\cl v^3}\left(v\Rep{\Sigma(M_P^2)}-T-(16\cl\lambda v^3+M_P^2v)\Rep{\Sigma'(M_P^2)}
+\dl &= \frac{1}{8\cl v^2}\left(\Rep{\Sigma}-\frac{1}{v}T-(16\cl\lambda v^2+M_P^2)
+\Rep{\Sigma'}
 \right)\\
-\dZphi &= \Rep{\Sigma'(M_P^2)}
+\dZ &= \Rep{\Sigma'}
 \end{align}
 
+We define $M_P^2$ as the second derivative of the tree potential evaluated at VEV, so:
+\begin{equation}
+M_P^2 = \frac{\partial^2}{\partial \varphi_1^2}\cl\lambda\varphi_1^4\Big|_{v} = 12\cl\lambda v^2
+\end{equation}
+and we impose, that it does not change after one loop contributions. \\
 
+Contributions to $\Sigma$ and $T$ constitutes of the following diagrams:
+\todo{diagrams}
 
+The values of diagrams are as follows:
+Contributing to $\Sigma$:
+\begin{align}
+&-i\frac{e^2}{M_V}\Big[M_V^2a(M_2)+(-p^2-M_V^2+M_2^2)a(M_V)-(p^2+M_2^2)^2b_0(p,0,M_2)+ 
+\notag\\ 
+&(p^2+M_2^2-M_V^2)^2b_0(p,M_V,M_2)\Big]
+\end{align}
+\begin{align}
+&-i\frac{e^4v^2}{2M_V^4}\Big[2M_V^2a(M_V)+p^4b_0(p,0,0)-2(p^2-M_V^2)^2b_0(p,M_V,0)+\notag \\
+&16M_V^4b_0^b(p,M_V,M_V)+(p^4-4p^2M_V^2-4M_V^4)b_0(p,M_V,M_V)\Big]
+\end{align}
+\begin{align}
+-i3e^2a_b(M_V) \\
+-i12\cl\lambda a(M_1) \\
+-i4\cl\lambda a(M_2) \\
+-i288\cl^2\lambda^2v^2b_0(p,M_1,M_1) \\
+-i32\cl^2\lambda^2 v^2b_0(p,M_2,M_2) \\
+\end{align}
+Contributing to $T$:
+\begin{align}
+-i3e^2va^b(M_V) \\
+-i12\cl\lambda va(M_1) \\
+-i4\cl\lambda va(M_2) \\
+-i4\cl\lambda v^3
+\end{align}
+Where
+\begin{align}
+a(M) = \\
+b_0(p,M_1,M_2) = \\
+a^b(M) = \\
+b_0^b(p,M_1,M_2) = 
+\end{align}
 
-\section{"Zero momentum" approuch}
-
+Here, we will be interested in only contributions up to order $e^4$. From our \MSbar considerations 
+we can see, that $\lambda$ should be of order $e^4$, that $M_V^2$ should be of order $e^2$ and 
+that $M_1$, $M_2$ should be of order $e^4$. 
+As that we are 
+intersted only in following parts of contributions to $\Sigma$ and $T$:
+\begin{align}
+\Sigma_{e^0} = &-\frac{e^2}{M_V^2}\Big[-p^4b_0(p,0,M_2)+p^4b_0(p,M_V,M_2)\Big]-\notag \\
+&\frac{e^4v^2}{M_V^4}\Big[p^4b_0(p,0,0)-2p^4b_0(p,M_V,0)+p^4b_0(p,M_V,M_V)\Big] \\
+\Sigma_{e^2} = &-\frac{e^2}{M_V^2}\Big[-p^2a(M_V)-2p^2M_V^2b_0(p,M_V,M_2)\Big]-\notag \\
+&\frac{e^4v^2}{2M_V^4}\Big[4p^2M_V^2b_0(p,M_V,0)-4p^2M_V^2b_0(p,M_V,M_V)\Big] \\
+\Sigma_{e^4} = &-\frac{e^2}{M_V^2}a(M_V)\Big[-M_V^2a(M_V)+M_V^4b_0(p,M_V,M_2)\Big]-\notag \\
+&\frac{e^4v^2}{2M_V^4}\Big[2M_V^2a(M_V)-2M_V^4b_0(p,M_V,0)+\notag \\
+&16M_V^4b_0^b(p,M_V,M_V)-4M_V^4b_0(p,M_V,M_V)\Big]-\notag\\
+&3e^2a^b(M_V)-\notag\\
+&\frac{e^2}{M_V^2}\Big[-2p^2M_2^2b_0(p,0,M_2)+2p^2M_2^2b_0(p,M_V,M_2)\Big] \\
+T_{e^4} = & -3e^2va^b(M_V)-4\cl\lambda v^3
+\end{align}
+The divergent part of $T$, $\Sigma$ and $\Sigma'$ are:
+\begin{align}
+\textrm{div}T = -\frac{3e^4v^4}{16\pi^2}\Big(-\frac{2}{\epsilon}\Big)\\
+\textrm{div}\Sigma = \frac{6e^2(M_P^2-3e^2v^2)}{32\pi^2}\Big(-\frac{2}{\epsilon}\Big)\\
+\textrm{div}\Sigma' = \frac{3e^2}{16\pi^2}\Big(-\frac{2}{\epsilon}\Big)
+\end{align}
+After subsituing to $\dl$, $\dm$, $\dZ$ and then to $V_R$ we see that $\textrm{div}V_R = 0$, 
+thus renormalisation procedure succeeds in canceling divergensis.
+%\subsection{Explicit mass term case}
+%For the comparison, we will present the same calculation, performed on the analoguos theory with 
+%explicit mass term. Similary as in the \ref{no_mass_term} we need to shift fields for 
+%\ref{second_derivativ_condition} to be satisfied. The Lagrangian in this case is:
+%\begin{align}\label{mass_term}
+%\mathcal{L} = &-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+ 
+%\frac{1}{2}(\partial_\mu(\varphi_1+v) - eA_\mu\varphi_2)^2\\
+%&+\frac{1}{2}(\partial_\mu\varphi_2+eA_\mu(\varphi_1+v))^2 - \cm m^2((\varphi_1+v)^2+\varphi_2^2)
+%-\cl\lambda((\varphi_1+v)^2+\varphi_2^2)^2. \notag
+%\end{align}
+%With renormalisation constatnts:
+%\begin{align}
+%\mathcal{L_R} = &-\frac{1}{4}F_{\mu\nu}F^{\mu\nu} \\
+%&+(1+ \dZ)(\frac{1}{2}(\partial_\mu(\varphi_1+v) - eA_\mu\varphi_2)^2
+%+\frac{1}{2}(\partial_\mu\varphi_2+eA_\mu(\varphi_1+v))^2) \notag \\
+%&-(1+\dZ)^2\cl(\lambda+\dl)((\varphi_1+v)^2+\varphi_2^2)^2  \notag \\
+%&-(1+\dZ)c_m(m+\dm)((\varphi_1+v)^2+\varphi_2^2).
+%\end{align}
+%Corrections then are:
+%\begin{align}
+%\dS&=-12\cl v^2(2\lambda\dZphi+\dl)-2\cm\dm-2\cm m^2\dZ -p^2\dZ \\
+%\dT&=-4\cl v^3(2\lambda\dZphi+\dl)-2\cm\dm v-2\cm m^2v\dZ.
+%\end{align}
+%This changes the form of renormalisation constants to:
+%\begin{align}
+%\dm &= \frac{-1}{4\cm}\left(\Rep{\Sigma}-\frac{3}{v}T-(4\cm m^2+M_P^2)\Rep{\Sigma'}
+%\right)\label{delta_m_mass}\\
+%\dl &= \frac{1}{8\cl v^2}\left(\Rep{\Sigma}-\frac{1}{v}T-(16\cl\lambda v^2+M_P^2)
+%\Rep{\Sigma'}
+%\right)\\
+%\dZ &= \Rep{\Sigma'}
+%\end{align}
+%The only difference is $4\cm m^2$ term in \ref{delta_m_mass}. 
+%\section{"Zero momentum" approach}
+%Here we will compare two kinds of "zero momentum" approach. 
+%First will be imposing renormalisation conditions in terms of only derivatives of 
+%effective potential. This is the zero momentum approach as first and second derivatives 
+%are limits of, respectively, taddpole and sef-energy in the zero momentum limit. \\
+%qSecond kind will be to calculate approach from \ref{finite momentum}in the zero momentum limit.\\
+%Later we will discus some "potential only" version with different conditions and discuss whether 
+%adding finite momentum to it will produce satisfying results.  
+\subsection{"Potential only" version}
+%\subsubsection{No mass term}
+We are concerned with the theory described by \ref{no_mass_term}.
+Here, as well, we will consider potential up to order $e^4$. \\
+We start with the 1-loop level potential with counterterms:
+\begin{align}
+\VRIloop = \frac{3e^4\varphi^4}{64\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-\frac{5}{6}+
+\log{\frac{e^2\varphi_1^2}{4\pi\mu^2}}\Big) + \cl\dl\varphi_1^4+\cm\dm\varphi_1^2
+\end{align}
+As renormalisation conditions we impose that:
+\begin{align}
+\DphiII{}\VRIloop\Big|_{v} &= 0 \\
+\DphiIV{}\VRIloop\Big|_{v} &= 0
+\end{align}
+Codesponding derivatives are:
+\begin{align}
+\DphiII{}\VRIloop = &\frac{9e^4\varphi_1^2}{16\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-
+\frac{5}{6}+\log{\frac{e^2\varphi_1^2}{4\pi\mu^2}}\Big)+\frac{21e^4}{32\pi^2}\varphi_1^2+ 
+12\cl\dl\varphi_1^2+2\cm\dm \\
+\DphiIV{}\VRIloop = &\frac{9e^4\varphi_1^2}{8\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-
+\frac{5}{6}+\log{\frac{e^2\varphi_1^2}{4\pi\mu^2}}\Big)+\frac{75e^4}{16\pi^2}+24\cl\dl.
+\end{align}
+So the conditions take form:
+\begin{align}
+&\frac{9e^4v^2}{16\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-
+\frac{5}{6}+\log{\frac{e^2v^2}{4\pi\mu^2}}\Big)+\frac{21e^4}{32\pi^2}v^2+ 
+12\cl\dl v^2+2\cm\dm = 0\\
+&\frac{9e^4v^2}{8\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-
+\frac{5}{6}+\log{\frac{e^2v^2}{4\pi\mu^2}}\Big)+\frac{75e^4}{16\pi^2}+24\cl\dl = 0.
+\end{align}
+Solving for $\dl$ and $\dm$ we have:
+\begin{align}
+\dl = &\frac{-e^4}{64\pi^2\cl}\Big(3\big(-\frac{2}{\epsilon}+\gamma_E-
+\frac{5}{6}+\log\frac{e^2v^2}{4\pi\mu^2}\big)+\frac{25}{2}\Big) \\
+\dm = &\frac{27e^4v^2}{32\pi^2\cm}.
+\end{align}
+Then, the renormalised potential is:
+\begin{align}
+V_R = \cl\lambda\varphi_1^4 + \frac{e^4\varphi_1^4}{64\pi^2}\Big(3\log\frac{\varphi_1^2}{v^2}- 
+\frac{25}{2}\Big)+
+\frac{27e^4v^2\varphi_1^2}{32\pi^2}
+\end{align}
+We would like to write $V_R$ in terms of $M_P$ -- the physical mass and $v$.
+First relation is $\lambda = \frac{M_P^2}{12\cl v^2}$. Potential writen with this substitution 
+becames:
+\begin{align}
+V_R = \frac{M_P^2\varphi_1^4}{12v^2} + \frac{e^4\varphi_1^4}{64\pi^2}\Big(3\log
+\frac{\varphi_1^2}{v^2}- 
+\frac{25}{2}\Big)+
+\frac{27e^4v^2\varphi_1^2}{32\pi^2}
+\end{align}
+%Writing it with $M_P = 12\cl\lambda v^2$ -- physical mass, as a parameter, instead of 
+%$\lambda$ gives us:
+%\begin{align}
+%\VRIloop = \frac{3e^4\varphi^4}{64\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-\frac{5}{6}+
+%\log{\frac{e^2\varphi_1^2}{4\pi\mu^2}}\Big) + \cl\dl\varphi_1^4+\cm\dm\varphi_1^2
+%\end{align}
+To write $e$ in terms of $M_P$ and $v$ we use the condition that 
+\begin{align}
+\DphiI{}\VR\Big|_{v} &= 0 
+\end{align}
+as $v$ is by definition minimum of the potential. \\
+It gives the relation:
+\begin{align}
+\frac{M_P^2v}{3}+\frac{e^4v^3}{16\pi^2}\Big(-\frac{25}{2}\Big)+\frac{3e^4v^3}{32\pi^2}+
+\frac{27e^4v^3}{16\pi^2} = 0
+\end{align}
+Thus, we conclude that: 
+\begin{equation}
+e^4=\frac{-M_P^2\pi^2}{3v^2}.
+\end{equation}
+This, unfortunatelly, is unacceptable, as then $e$ is no longer a real number, which is 
+unphysical.
+Thus, we conclude, that presented renormalisation method is not working and we need to search for 
+another. One of possible ways is to expand the method to finite momentum. \\
+We will now investigate, whether this has some chance of working by comparing 
+above "potential only" method, only with first and second derivative, "self energy and tadpole" 
+method and it's zero momentum limit. \\
+With the conditions:
+\begin{align}
+\DphiI{}\VRIloop\Big|_{v} &= 0 \\
+\DphiII{}\VRIloop\Big|_{v} &= 0
+\end{align}
+Renormalisation constants $\dl$ and $\dm$ take form:
+\begin{align}
+\dl =& -\frac{e^4}{8\pi^2}-\frac{3e^4}{16\pi^2}\Big(-\frac{2}{\epsilon}-\gamma_E+\log{
+\frac{e^2v^2}{4\pi\mu^2}}\Big)\\
+\dm =& \frac{3e^4v^2}{16\pi^2}.
+\end{align}
+And the renormalised potential is equal to:
+\begin{align}
+V_R = \frac{M_P^2}{48\cl v^2}+\frac{e^4\varphi_1^4}{128\pi^2}\Big(6\log{
+\frac{\varphi_1^2}{v^2}} - 9\Big)+\frac{3e^4v^2\varphi_1^2}{32\pi^2}.
+\end{align}
+Now, however, the condition for $v$ is meaningless ass we already used it in renormalisation 
+conditions. Nethertheless, we want to investigate how values of $\dl$ and $\dm$ are compared 
+to other approaches.
+%\subsubsection{With mass term}
+%For comparison, we include also a version of this aprouch steming from \ref{mass_term}.
+%Inclusion of the mass term do not change the
+%form of $\dl$ and $\dm$. The frist difference occurs in the potential. \\
+%First we will describe the case with derivatives II and IV used in renormalisation conditions. 
+%Then the potential is equal:
+%\begin{align}
+%V_R = \cl\lambda\varphi_1^4 + \cm m^2\varphi_1^2 +
+%\frac{e^4\varphi_1^4}{64\pi^2}\Big(3\log\frac{\varphi_1^2}{v^2}- 
+%\frac{25}{2}\Big)+
+%\frac{27e^4v^2\varphi_1^2}{32\pi^2}.
+%\end{align}
+%Now, we have that $M_P = 12\cl\lambda v^2 + 2\cm m^2$. 
+%No, we will use the condition, that:
+%\begin{align}\label{tree_first}
+%\DphiI{}\VT\Big|_v = 0
+%\end{align}
+%we have that $4\cl\lambda v^3+2\cm m^2v = 0$, so $\lambda = -\frac{\cm m^2}{2\cl v^2}$, so 
+%\begin{align}
+%m^2&=\frac{-M_P^2}{4\cm} \textrm{\ \ and}\\ 
+%\lambda &= \frac{M_P^2}{8\cl v^2}. 
+%\end{align}
+%Writing $V_R$ with respect to that gives:
+%\todo{pytanie}
+%\begin{align}
+%V_R = \frac{M_P^2\varphi_1^4}{8v^2}-\frac{M_P^2\varphi_1^2}{4} + 
+%\frac{e^4\varphi_1^4}{64\pi^2}\Big(3\log
+%\frac{\varphi_1^2}{v^2}- 
+%\frac{25}{2}\Big)+
+%\frac{27e^4v^2\varphi_1^2}{32\pi^2}
+%\end{align}
+%From this we have, that:
+%\begin{equation}
+%\frac{e^4v^3}{\pi^2} = 0,
+%\end{equation}
+%which is also a not safisying result. \\
+%However, if we drop the condition, that 
+%$\DphiI{}\VT\Big|_v = 0$, we have potential in the form:
+%\begin{align}
+%V_R = \frac{M_P^2-2\cm m^2}{12v^2}\varphi_1^4+\cm m^2\varphi_1^2 + 
+%\frac{e^4\varphi_1^4}{64\pi^2}\Big(3\log
+%\frac{\varphi_1^2}{v^2}- 
+%\frac{25}{2}\Big)+
+%\frac{27e^4v^2\varphi_1^2}{32\pi^2}
+%\end{align}
+%From thism, using the condition that $\DphiI{}\VR\Big|_v = 0$, we can derive the 
+%correspondence between $e$ and $M_P$, $v$ and $m$:
+%\begin{equation}
+%e^4 = -\frac{(M_P^2+4\cm m^2)\pi^2}{3v^2},
+%\end{equation}
+%which is finally a sensible result as it can be realised with real, positive $e$. However, then 
+%it must hold that $m^2<-\frac{M_P^2}{4\cm}$.
+\subsection{"Limits" version}
 
 
 
