@@ -274,3 +274,15 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+Mass_term_case/Mass_term_case.tex
+Technical_introduction/Technical_introduction.tex
+Half_MSbar_Half_Onshell_scheme/Half_MSbar_Half_Onshell_scheme.tex
+LaTeX/.send_to_server.sh
+LaTeX/.new_script.sh
+LaTeX/.rename_chapter.sh
+LaTeX/.new_chapter.sh
+bibliography/bibliography.tex
+Conclusions/Conclusions.tex
+On_shell_renormalisation_of_the_effective_potential/On_shell_renormalisation_of_the_effective_potential.tex
+MS_bar_renormalisation_of_the_effective_potential/MS_bar_renormalisation_of_the_effective_potential.tex
+Introduction/Introduction.tex
