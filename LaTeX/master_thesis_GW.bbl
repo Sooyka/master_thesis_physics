@@ -1,0 +1,18 @@
+% \bib, bibdiv, biblist are defined by the amsrefs package.
+\begin{bibdiv}
+\begin{biblist}
+
+\bib{Coleman1973}{article}{
+      author={Coleman, Sidney},
+      author={Weinberg, Erick},
+       title={Radiative corrections as the origin of spontaneous symmetry
+  breaking},
+        date={1973Mar},
+     journal={Phys. Rev. D},
+      volume={7},
+       pages={1888\ndash 1910},
+         url={https://link.aps.org/doi/10.1103/PhysRevD.7.1888},
+}
+
+\end{biblist}
+\end{bibdiv}
