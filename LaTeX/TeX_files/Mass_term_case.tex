@@ -1,0 +1,98 @@
+% mainfile: ../master_thesis_GW.tex
+\chapter{Mass term case}
+For comparison, we present here results for above methods used in the case with explicit mass term.
+
+\subsection{On-shell finite momentum}
+For the comparison, we will present the same calculation, performed on the analoguos theory with 
+explicit mass term. Similary as in the \ref{no_mass_term} we need to shift fields for 
+\ref{second_derivativ_condition} to be satisfied. The Lagrangian in this case is:
+\begin{align}\label{mass_term}
+\mathcal{L} = &-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+ 
+\frac{1}{2}(\partial_\mu(\varphi_1+v) - eA_\mu\varphi_2)^2\\
+&+\frac{1}{2}(\partial_\mu\varphi_2+eA_\mu(\varphi_1+v))^2 - \cm m^2((\varphi_1+v)^2+\varphi_2^2)
+-\cl\lambda((\varphi_1+v)^2+\varphi_2^2)^2. \notag
+\end{align}
+With renormalisation constatnts:
+\begin{align}
+\mathcal{L_R} = &-\frac{1}{4}F_{\mu\nu}F^{\mu\nu} \\
+&+(1+ \dZ)(\frac{1}{2}(\partial_\mu(\varphi_1+v) - eA_\mu\varphi_2)^2
++\frac{1}{2}(\partial_\mu\varphi_2+eA_\mu(\varphi_1+v))^2) \notag \\
+&-(1+\dZ)^2\cl(\lambda+\dl)((\varphi_1+v)^2+\varphi_2^2)^2  \notag \\
+&-(1+\dZ)c_m(m+\dm)((\varphi_1+v)^2+\varphi_2^2).
+\end{align}
+Corrections then are:
+\begin{align}
+\dS&=-12\cl v^2(2\lambda\dZphi+\dl)-2\cm\dm-2\cm m^2\dZ -p^2\dZ \\
+\dT&=-4\cl v^3(2\lambda\dZphi+\dl)-2\cm\dm v-2\cm m^2v\dZ.
+\end{align}
+This changes the form of renormalisation constants to:
+\begin{align}
+\dm &= \frac{-1}{4\cm}\left(\Rep{\Sigma}-\frac{3}{v}T-(4\cm m^2+M_P^2)\Rep{\Sigma'}
+\right)\label{delta_m_mass}\\
+\dl &= \frac{1}{8\cl v^2}\left(\Rep{\Sigma}-\frac{1}{v}T-(16\cl\lambda v^2+M_P^2)
+\Rep{\Sigma'}
+\right)\\
+\dZ &= \Rep{\Sigma'}
+\end{align}
+The only difference is $4\cm m^2$ term in \ref{delta_m_mass}. 
+\section{"Zero momentum" approach}
+Here we will compare two kinds of "zero momentum" approach. 
+First will be imposing renormalisation conditions in terms of only derivatives of 
+effective potential. This is the zero momentum approach as first and second derivatives 
+are limits of, respectively, taddpole and sef-energy in the zero momentum limit. \\
+qSecond kind will be to calculate approach from \ref{finite momentum}in the zero momentum limit.\\
+Later we will discus some "potential only" version with different conditions and discuss whether 
+adding finite momentum to it will produce satisfying results.  
+
+\subsubsection{Potential only version}
+For comparison, we include also a version of this aprouch steming from \ref{mass_term}.
+Inclusion of the mass term do not change the
+form of $\dl$ and $\dm$. The frist difference occurs in the potential. \\
+First we will describe the case with derivatives II and IV used in renormalisation conditions. 
+Then the potential is equal:
+\begin{align}
+V_R = \cl\lambda\varphi_1^4 + \cm m^2\varphi_1^2 +
+\frac{e^4\varphi_1^4}{64\pi^2}\Big(3\log\frac{\varphi_1^2}{v^2}- 
+\frac{25}{2}\Big)+
+\frac{27e^4v^2\varphi_1^2}{32\pi^2}.
+\end{align}
+Now, we have that $M_P = 12\cl\lambda v^2 + 2\cm m^2$. 
+No, we will use the condition, that:
+\begin{align}\label{tree_first}
+\DphiI{}\VT\Big|_v = 0
+\end{align}
+we have that $4\cl\lambda v^3+2\cm m^2v = 0$, so $\lambda = -\frac{\cm m^2}{2\cl v^2}$, so 
+\begin{align}
+m^2&=\frac{-M_P^2}{4\cm} \textrm{\ \ and}\\ 
+\lambda &= \frac{M_P^2}{8\cl v^2}. 
+\end{align}
+Writing $V_R$ with respect to that gives:
+\todo{pytanie}
+\begin{align}
+V_R = \frac{M_P^2\varphi_1^4}{8v^2}-\frac{M_P^2\varphi_1^2}{4} + 
+\frac{e^4\varphi_1^4}{64\pi^2}\Big(3\log
+\frac{\varphi_1^2}{v^2}- 
+\frac{25}{2}\Big)+
+\frac{27e^4v^2\varphi_1^2}{32\pi^2}
+\end{align}
+From this we have, that:
+\begin{equation}
+\frac{e^4v^3}{\pi^2} = 0,
+\end{equation}
+which is also a not safisying result. \\
+However, if we drop the condition, that 
+$\DphiI{}\VT\Big|_v = 0$, we have potential in the form:
+\begin{align}
+V_R = \frac{M_P^2-2\cm m^2}{12v^2}\varphi_1^4+\cm m^2\varphi_1^2 + 
+\frac{e^4\varphi_1^4}{64\pi^2}\Big(3\log
+\frac{\varphi_1^2}{v^2}- 
+\frac{25}{2}\Big)+
+\frac{27e^4v^2\varphi_1^2}{32\pi^2}
+\end{align}
+From thism, using the condition that $\DphiI{}\VR\Big|_v = 0$, we can derive the 
+correspondence between $e$ and $M_P$, $v$ and $m$:
+\begin{equation}
+e^4 = -\frac{(M_P^2+4\cm m^2)\pi^2}{3v^2},
+\end{equation}
+which is finally a sensible result as it can be realised with real, positive $e$. However, then 
+it must hold that $m^2<-\frac{M_P^2}{4\cm}$.
