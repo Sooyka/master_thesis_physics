@@ -15,8 +15,7 @@
 \contentsline {chapter}{\numberline {3}MS bar renormalisation of the effective potential}{5}{chapter.3}%
 \contentsline {chapter}{\numberline {4}On shell renormalisation of the effective potential}{7}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Finite momentum approach}{7}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}"Potential only" version}{10}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}"Limits" version}{12}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Zero momentum approach}{10}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Half $\overline {\textrm {MS}}\ $-Half Onshell scheme}{13}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Finite momentum}{13}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Zero momentum}{13}{section.5.2}%
