@@ -1,9 +1,10 @@
 % mainfile: ../master_thesis_GW.tex
 \chapter{Technical introduction}
 \section{Models}
-\subsection{Toy models}
-\subsubsection{Conformal toy model}
-For a toy model we choose theory described by the Lagrangian:
+\subsection{Toy model}
+%\subsubsection{Conformal toy model}
+This model will be used throughout the ehole thesis, unless stated otherwise. \\
+For a toy model we choose theory of scalar electrodynamics, described by the Lagrangian:
 \begin{equation}
 \mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+D_\mu\Phi D^\mu\Phi^\dag-\lambda\Phi^4,
 \end{equation}
@@ -22,12 +23,12 @@ Writing operator $D$ more explicitly it reads:
 (\partial^\mu\Phi^\dag-ieA^\mu\Phi^\dag)-\lambda\Phi^4,
 \end{equation}
 
-For the reasons that will be clear in \ref{} we will write $\Phi$ field as two real scalar fields 
+For the reasons that will be clear in \ref{finite_momentum} we will write $\Phi$ field as two real scalar fields 
 $\varphi_1$ and $\varphi_2$, such that:
 \begin{equation}
 \Phi = \frac{1}{\sqrt{2}}(\varphi_1+\varphi_2)
 \end{equation}
-Then Lagrangian take form:
+Then Lagrangian takes form:
 \begin{align}
 \mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+ \frac{1}{2}(\partial_\mu\varphi_1 - eA_\mu\varphi_2)
 (\partial^\mu\varphi_1 - eA^\mu\varphi_2)  \\
@@ -69,3 +70,49 @@ The minimal-substraction scheme
 \subsubsection{Zero momentum limit version}
 \subsection{Half \MSbar-Half On-shell}
 \section{Effective potential}
+
+\todo{some statements about effective potential in general} \\
+%For now we will be working with our toy model described by Lagrangian \ref{scalar_electrodynamics}
+%In this model tree level effective potential is equal to:
+Now, we will calculate
+Tree level potential in our model is:
+\begin{equation}
+V_T = \frac{1}{4}\lambda(\varphi_1^2+\varphi_2^2)^2
+\end{equation}
+
+
+The one loop correction to the effective potential is calculated as a sum of the following diagrams:
+\\
+\begin{align}
+i\int \frac{\textrm{d}^4k}{(2\pi)^4}\frac{1}{2n}&\left(\frac{\lambda\frac{1}{2}\varphi_1^2}
+{k^2+i\varepsilon}\right)^n \\
+i\int \frac{\textrm{d}^4k}{(2\pi)^4}\frac{1}{2n}&\left(\frac{1}{3}\frac{\lambda\frac{1}
+{2}\varphi_1^2}
+{k^2+i\varepsilon}\right)^n \\
+i\int \frac{\textrm{d}^4k}{(2\pi)^4}\frac{1}{2n}&\left(\frac{2e^2\frac{1}{2}\varphi_1^2}
+{k^2+i\varepsilon}\right)^n(g^\mu_{\ \,\mu} - 1)
+\end{align}
+
+Summing all the diagrams in series it gives:
+
+\begin{align}
+i\int \frac{\textrm{d}^4k}{(2\pi)^4}\sum\limits_{n=1}^{\infty}
+\frac{1}{2n}&\left(\frac{\lambda\frac{1}{2}\varphi_1^2}
+{k^2+i\varepsilon}\right)^n \\
+i\int \frac{\textrm{d}^4k}{(2\pi)^4}\sum\limits_{n=1}^{\infty}\frac{1}{2n}&
+\left(\frac{1}{3}\frac{\lambda\frac{1}{2}\varphi_1^2}
+{k^2+i\varepsilon}\right)^n \\
+i\int \frac{\textrm{d}^4k}{(2\pi)^4}\sum\limits_{n=1}^{\infty}\frac{1}{2n}&
+\left(\frac{2e^2\frac{1}{2}\varphi_1^2}
+{k^2+i\varepsilon}\right)^n(g^\mu_{\ \,\mu} - 1)
+\end{align}
+
+After passing to $D=4-2\epsilon$ dimensions and using dimensional regularisation we have:
+\begin{align}
+V_{1L}=\frac{1}{4}\frac{(\frac{1}{2}\lambda\varphi_1^2)^2}{(4\pi)^2}&\left(-\frac{2}{\epsilon}
++\gamma_E-\frac{3}{2}+\log{\frac{(\frac{1}{2}\lambda\varphi_1^2)^2}{4\pi\mu^2}}\right) + \\
+\frac{1}{4}\frac{(\frac{1}{6}\lambda\varphi_1^2)^2}{(4\pi)^2}&\left(-\frac{2}{\epsilon}
++\gamma_E-\frac{3}{2}+\log{\frac{(\frac{1}{6}\lambda\varphi_1^2)^2}{4\pi\mu^2}}\right) + \\
+\frac{1}{4}\frac{3(e^2\varphi_1^2)^2}{(4\pi)^2}&\left(-\frac{2}{\epsilon}+\gamma_E
+-\frac{5}{6}+\log{\frac{e^2\varphi^2}{4\pi\mu^2}}\right)
+\end{align}

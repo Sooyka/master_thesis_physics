@@ -2,18 +2,16 @@
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Technical introduction}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Models}{3}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Toy models}{3}{subsection.2.1.1}%
-\contentsline {subsubsection}{COnformal toy model}{3}{section*.2}%
-\contentsline {subsubsection}{Toy model with explicit mass term}{4}{section*.3}%
+\contentsline {subsection}{\numberline {2.1.1}Toy model}{3}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Real model}{4}{subsection.2.1.2}%
 \contentsline {section}{\numberline {2.2}Renormalisation schemes}{4}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}$\overline {\textrm {MS}}\ $}{4}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}On-shell}{4}{subsection.2.2.2}%
-\contentsline {subsubsection}{Zero momentum limit version}{4}{section*.4}%
+\contentsline {subsubsection}{Zero momentum limit version}{4}{section*.2}%
 \contentsline {subsection}{\numberline {2.2.3}Half $\overline {\textrm {MS}}\ $-Half On-shell}{4}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Effective potential}{4}{section.2.3}%
-\contentsline {chapter}{\numberline {3}MS bar renormalisation of the effective potential}{5}{chapter.3}%
-\contentsline {chapter}{\numberline {4}On shell renormalisation of the effective potential}{7}{chapter.4}%
+\contentsline {chapter}{\numberline {3}MS bar renormalization of the effective potential}{6}{chapter.3}%
+\contentsline {chapter}{\numberline {4}On shell renormalization of the effective potential}{7}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Finite momentum approach}{7}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Zero momentum approach}{10}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Half $\overline {\textrm {MS}}\ $-Half Onshell scheme}{13}{chapter.5}%
@@ -22,5 +20,5 @@
 \contentsline {chapter}{\numberline {6}Mass term case}{15}{chapter.6}%
 \contentsline {subsection}{\numberline {6.0.1}On-shell finite momentum}{15}{subsection.6.0.1}%
 \contentsline {section}{\numberline {6.1}"Zero momentum" approach}{16}{section.6.1}%
-\contentsline {subsubsection}{Potential only version}{16}{section*.5}%
+\contentsline {subsubsection}{Potential only version}{16}{section*.3}%
 \contentsline {chapter}{\numberline {7}Conclusions}{18}{chapter.7}%
