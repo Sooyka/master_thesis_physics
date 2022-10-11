@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.3.29)  10 OCT 2022 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.3.29)  10 OCT 2022 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1308,17 +1308,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--78
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
+Underfull \hbox (badness 10000) in paragraph at lines 74--78
 
  []
 
-[4]) (./TeX_files/MS_bar_renormalisation_of_the_effective_potential.tex
-[5]
+) (./TeX_files/Calculation_of_the_effective_potential.tex [4]
 Chapter 3.
-) (./TeX_files/On_shell_renormalisation_of_the_effective_potential.tex [6
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+[5
+
+]) (./TeX_files/MS_bar_renormalisation_of_the_effective_potential.tex
+[6]
+Chapter 4.
+) (./TeX_files/On_shell_renormalisation_of_the_effective_potential.tex [7
 
 ]
-Chapter 4.
+Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
@@ -1330,18 +1339,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--19
  []
 
 
-LaTeX Warning: Reference `' on page 7 undefined on input line 35.
+LaTeX Warning: Reference `' on page 8 undefined on input line 35.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--36
 
  []
 
-[7
+[8
 
 ]
 
-LaTeX Warning: Reference `' on page 8 undefined on input line 38.
+LaTeX Warning: Reference `' on page 9 undefined on input line 38.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 95--97
@@ -1353,15 +1362,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--100
 
  []
 
-[8]
+[9]
 Overfull \hbox (22.04973pt too wide) in paragraph at lines 134--139
 []\T1/cmr/m/n/12 (-20) Here, we will be in-ter-ested in only con-tri-bu-tions u
 p to or-der $\OML/plm/m/it/12 e[]$\T1/cmr/m/n/12 (-20) . From our $[] $consider
 ations
  []
 
-[9] [10] [11]) (./TeX_files/Half_MSbar_Half_Onshell_scheme.tex [12]
-Chapter 5.
+[10] [11] [12]) (./TeX_files/Half_MSbar_Half_Onshell_scheme.tex [13]
+Chapter 6.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 2.
@@ -1410,30 +1419,30 @@ Package microtype Warning: I cannot find a protrusion list for font
 (microtype)                `OT4/cmtt/m/n/17.28'. Switching off
 (microtype)                protrusion for this font on input line 2.
 
-[13
+[14
 
-]) (./TeX_files/Mass_term_case.tex [14]
-Chapter 6.
+]) (./TeX_files/Mass_term_case.tex [15]
+Chapter 7.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 5.
 
-[15
+[16
 
 ]
 
-LaTeX Warning: Reference `mass_term' on page 16 undefined on input line 48.
+LaTeX Warning: Reference `mass_term' on page 17 undefined on input line 48.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 68--71
 
  []
 
-[16]) (./TeX_files/Conclusions.tex [17]
-Chapter 7.
-) (./TeX_files/bibliography.tex (./master_thesis_GW.bbl [18
+[17]) (./TeX_files/Conclusions.tex [18]
+Chapter 8.
+) (./TeX_files/bibliography.tex (./master_thesis_GW.bbl [19
 
-])) [19
+])) [20
 
 ]
 (./master_thesis_GW.aux)
@@ -1441,13 +1450,13 @@ Chapter 7.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `master_thesis_GW.out' has not changed.
-(rerunfilecheck)             Checksum: 1A9FA4446A0368AC8A39876351E6AE19;1350.
+(rerunfilecheck)             Checksum: C65E97A214384DA45A0CF6BC9AEED926;1439.
  ) 
 Here is how much of TeX's memory you used:
- 29712 strings out of 479304
- 595221 string characters out of 5869779
+ 29719 strings out of 479304
+ 595448 string characters out of 5869779
  1052990 words of memory out of 5000000
- 45913 multiletter control sequences out of 15000+600000
+ 45915 multiletter control sequences out of 15000+600000
  444197 words of font info for 205 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  97i,12n,94p,502b,764s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1470,10 +1479,10 @@ ype1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super
 /sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/
 share/texmf/fonts/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/ty
 pe1/public/cm-super/sfti1000.pfb>
-Output written on master_thesis_GW.pdf (22 pages, 256989 bytes).
+Output written on master_thesis_GW.pdf (23 pages, 257691 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 391 compressed objects within 4 object streams
- 151 named destinations out of 1000 (max. 500000)
- 71861 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 447 PDF objects out of 1000 (max. 8388607)
+ 399 compressed objects within 4 object streams
+ 153 named destinations out of 1000 (max. 500000)
+ 71869 words of extra memory for PDF output out of 74296 (max. 10000000)
 
