@@ -5,14 +5,76 @@
 
 \MSbar renormalization gives:
 \begin{align}
-V_R=\frac{1}{4}\frac{(\frac{1}{2}\lambda\varphi_1^2)^2}{(4\pi)^2}&\left(-\frac{3}{2}+ 
+V_{R}=\cl\lambda\varphi_1^4 + \frac{1}{4}\frac{(\frac{1}{2}\lambda\varphi_1^2)^2}{(4\pi)^2}&\left(-\frac{3}{2}+ 
 \log{\frac{(\frac{1}{2}\lambda\varphi_1^2)^2}{\mu^2}}\right) + \\
 \frac{1}{4}\frac{(\frac{1}{6}\lambda\varphi_1^2)^2}{(4\pi)^2}&\left(-\frac{3}{2}+ 
 \log{\frac{(\frac{1}{6}\lambda\varphi_1^2)^2}{\mu^2}}\right) + \\
 \frac{1}{4}\frac{3(e^2\varphi_1^2)^2}{(4\pi)^2}&\left(-\frac{5}{6}+
-\log{\frac{e^2\varphi^2}{\mu^2}}\right)
+\log{\frac{e^2\varphi_1^2}{\mu^2}}\right)
 \end{align}
 
+Here, as will be apparent in the second, we are interested only in $e^4$ part, so from now on, 
+we will write:
 \begin{align}
-\frac{M_P^2}{v^2}\Big(-\frac{1}{8}+\frac{1}{4}\log\frac{\varphi_1^2}{v^2}\Big)\varphi_1^4
+V_{R}=\cl\lambda\varphi_1^4 + \frac{1}{4}\frac{3(e^2\varphi_1^2)^2}{(4\pi)^2}&\left(-\frac{5}{6}+
+\log{\frac{e^2\varphi_1^2}{\mu^2}}\right)
 \end{align}
+
+We can bind $e$ to $\lambda$ and $v$ at the loop level, demanding that VEV does not change 
+due to one loop corrections, stating that:
+\begin{align}
+\DphiI\VR \Big|_v= 0
+\end{align}
+This gives the condition:
+\begin{align}
+4\cl\lambda v^3-\frac{e^4v^3}{16\pi^2}-\frac{3e^4v^3}{16\pi^2}\log\frac{e^2v^2}{\mu^2}=0
+\end{align}
+Setting scale parameter $\mu$ to the effective mass of the vector, namely $ev$, we have 
+simpler form of:
+\begin{align}
+4\cl\lambda v^3-\frac{e^4v^3}{16\pi^2}=0
+\end{align}
+Which gives:
+\begin{align}\label{e4_lambda_MS}
+\lambda = \frac{e^4}{64\cl\pi^2}
+\end{align}
+Writing potential with this substitutions yields:
+
+\begin{align}
+V_R = \frac{3e^4}{64\pi^2}\Big(-\frac{1}{2}+\log\frac{\varphi_1^2}{v^2}\Big)\varphi_1^4
+\end{align}
+
+
+Equations \ref{e4_lambda_MS} is very important in this discussion as it states, that $\lambda$ 
+is of order $e^4$ in our model. This post factum justifies our 
+choice in taking only $e^4$ part, as other part was of order $e^8$. \\
+
+We can now also bind square if the physical mass $M_P^2$ as the second derivative of the 
+renormalised effective potential at VEV.
+
+\begin{align}
+M_P^2 = \DphiII\VR \Big|_v = \frac{3e^4}{16\pi^2}\Big(-\frac{1}{2}\Big)v^2+\frac{e^4v^2}{8\pi^2} 
++\frac{3e^4v^2}{32\pi^2}
+\end{align}
+This gives that:
+\begin{align}
+M_P^2 = \frac{e^4v^2}{8\pi^2}
+\end{align}
+
+From this we have that the ratio between scalar mass $M_P^2$ and vector mass $m(V)^2$ is:
+\begin{align}
+\frac{M_P^2}{m(V)^2} = \frac{\frac{e^4v^2}{8\pi^2}}{e^2v^2} = \frac{e^2}{8\pi^2}
+\end{align}
+
+We can now also express $e^4$ and $\lambda$ in terms of $M_P^2$ and $v$:
+\begin{align}
+e^4 = \frac{8M_P^2\pi^2}{v^2} \\
+\lambda = \frac{M_P^2}{8\cl v^2}
+\end{align}
+
+Writing potential in these terms gives:
+\begin{align}
+V_R = \frac{3M_P^2}{8v^2}\Big(-\frac{1}{2}+\log\frac{\varphi_1^2}{v^2}\Big)\varphi_1^4
+\end{align}
+
+
