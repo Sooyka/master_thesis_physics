@@ -1,1 +1,0 @@
-../.bin/git_ignore_symlinks.sh
