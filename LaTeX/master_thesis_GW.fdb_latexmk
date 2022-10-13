@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex master_thesis_GW"] 1665593781 "master_thesis_GW.aux" "master_thesis_GW.bbl" "master_thesis_GW" 1665593924
-  "../bibliography/GW_bibliography.bib" 0 -1 0 ""
+["bibtex master_thesis_GW"] 1665659488 "master_thesis_GW.aux" "master_thesis_GW.bbl" "master_thesis_GW" 1665659490
+  "../Bibliography/GW_bibliography.bib" 1665659427 516 86368b30e15bbc0c5f0c5bc1d68bc970 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/amsrefs/amsrn.bst" 1288397156 15073 94ff0422b36f7eea65c1e1332ae40dfb ""
-  "master_thesis_GW.aux" 1665593782 5384 2ed2e57e7dfea7a85a05bc233aa7f9c9 "pdflatex"
+  "master_thesis_GW.aux" 1665659490 5384 bec8ea7f76984662fb889f3805bb3113 "pdflatex"
   (generated)
-  "master_thesis_GW.blg"
   "master_thesis_GW.bbl"
-["pdflatex"] 1665593781 "master_thesis_GW.tex" "master_thesis_GW.pdf" "master_thesis_GW" 1665593924
+  "master_thesis_GW.blg"
+["pdflatex"] 1665659489 "master_thesis_GW.tex" "master_thesis_GW.pdf" "master_thesis_GW" 1665659490
   "/etc/texmf/web2c/texmf.cnf" 1614123947 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plme.enc" 1136849721 3126 59f33ff3e396436ebc36f4e7b444d5c4 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc" 1136849721 2005 f094775651a1386335c158fb632529f1 ""
@@ -277,7 +277,7 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1613593815 38841 799d1dd9682a55ce442e10c99777ecc1 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1617028803 5160710 ecf427ae8fa19139d8691f526e47bb9b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1617028831 2571853 eb65b91a7f83c05988f27069a65ea2ca ""
-  "TeX_files/Bibliography.tex" 1657214467 151 cfbba6e91d876e14cebe3eb35be3851c ""
+  "TeX_files/Bibliography.tex" 1665659482 151 1280e67a154d9b49e37640703a550f95 ""
   "TeX_files/Calculation_of_the_effective_potential.tex" 1665511290 1924 024e7ff12c7f36fb395a7985543c89fb ""
   "TeX_files/Conclusions.tex" 1656757403 58 27f0757709a929d5802fe7fd27ab82f4 ""
   "TeX_files/Half_MSbar_Half_Onshell_scheme.tex" 1665593793 2964 794cabff9eace645054f210bcb8449d3 ""
@@ -286,17 +286,17 @@
   "TeX_files/Mass_term_case.tex" 1665403571 4313 7952e74fbfe3a9e0bcb062ad914d75c3 ""
   "TeX_files/On_shell_renormalisation_of_the_effective_potential.tex" 1665403571 14874 e90ff663c88e6fe1d19faa2b5e169a49 ""
   "TeX_files/Technical_introduction.tex" 1665403941 3313 493b57e2fa9a17ace99e0852fa6711d7 ""
-  "master_thesis_GW.aux" 1665593782 5384 2ed2e57e7dfea7a85a05bc233aa7f9c9 "pdflatex"
-  "master_thesis_GW.bbl" 1665403964 469 8c9937d2559b68de76570493d9c3d538 "bibtex master_thesis_GW"
-  "master_thesis_GW.out" 1665593782 1439 c65e97a214384da45a0cf6bc9aeed926 "pdflatex"
-  "master_thesis_GW.tex" 1665403840 1573 dc04a5a8cadca188382d8a8b7f135e90 ""
-  "master_thesis_GW.toc" 1665593782 2062 367f7bd1674b2ad68d263823cba550fc "pdflatex"
+  "master_thesis_GW.aux" 1665659490 5384 bec8ea7f76984662fb889f3805bb3113 "pdflatex"
+  "master_thesis_GW.bbl" 1665659489 469 8c9937d2559b68de76570493d9c3d538 "bibtex master_thesis_GW"
+  "master_thesis_GW.out" 1665659490 1439 c65e97a214384da45a0cf6bc9aeed926 "pdflatex"
+  "master_thesis_GW.tex" 1665593977 1573 dc04a5a8cadca188382d8a8b7f135e90 ""
+  "master_thesis_GW.toc" 1665659490 2062 367f7bd1674b2ad68d263823cba550fc "pdflatex"
   "part_of_preamble.tex" 1662652934 2532 14ae9797b2f21526a09d0805f3340a7d ""
   "part_of_preamble_diagrams.tex" 1656960533 2607 b971f649083d00becdd20e7070045ff2 ""
   "title_page.tex" 1657129208 63 06c8271684b781dea3755aed404a3abf ""
   (generated)
   "master_thesis_GW.log"
   "master_thesis_GW.pdf"
+  "master_thesis_GW.out"
   "master_thesis_GW.aux"
   "master_thesis_GW.toc"
-  "master_thesis_GW.out"
