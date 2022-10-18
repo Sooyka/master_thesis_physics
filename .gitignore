@@ -274,6 +274,7 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
 Mass_term_case/Mass_term_case.tex
 Technical_introduction/Technical_introduction.tex
 Half_MSbar_Half_Onshell_scheme/Half_MSbar_Half_Onshell_scheme.tex
