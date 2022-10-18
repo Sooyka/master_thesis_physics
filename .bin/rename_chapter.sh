@@ -10,3 +10,5 @@ mv "../${old_title}" "../${new_title}"
 ln -s "../LaTeX/TeX_files/${new_title}.tex" "../${new_title}/${new_title}.tex" 
 
 echo ${new_title}
+
+git_ignore_symlinks.sh

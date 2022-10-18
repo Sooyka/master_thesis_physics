@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 git_ignore_symlinks.py
+python3 ../.bin/git_ignore_symlinks.py
