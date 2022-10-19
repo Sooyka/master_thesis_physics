@@ -1,11 +1,11 @@
 % mainfile: ../master_thesis_GW.tex
-\chapter{On shell renormalisation of the effective potential}
+\chapter{On shell renormalisation of the effective potential -- finite momentum approach}
 
 One of the main topic of this thesis is to show a coherent way to renormalise a conformal theory 
 without explicit mass term in the on-shell scheme. Along the way, we will also discuss 
 the case with explicit mass term, for comparison.\\
 
-\section{Finite momentum approach}\label{finite momentum}
+%\section{Finite momentum approach}\label{finite momentum}
 To calculate on-shell renormalisation we need to calculate self energy. 
 However, it turns out, that simple calculation of self energy fails the test of 
 comparison between the zero-momentum limit of the self energy and the second derivative 
@@ -197,157 +197,7 @@ thus renormalisation procedure succeeds in canceling divergences.
 %qSecond kind will be to calculate approach from \ref{finite momentum}in the zero momentum limit.\\
 %Later we will discus some "potential only" version with different conditions and discuss whether 
 %adding finite momentum to it will produce satisfying results.  
-\section{Zero momentum approach}
-%\subsubsection{No mass term}
-We are concerned with the theory described by \ref{no_mass_term}.
-Here, as well, we will consider potential up to order $e^4$. \\
-We start with the 1-loop level potential with counterterms:
-\begin{align}
-\VRIloop = \frac{3e^4\varphi_1^4}{64\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-\frac{5}{6}+
-\log{\frac{e^2\varphi_1^2}{4\pi\mu^2}}\Big) + \cl\dl\varphi_1^4+\cm\dm\varphi_1^2
-\end{align}
-As renormalisation conditions we impose that:
-\begin{align}
-\DphiII{}\VRIloop\Big|_{v} &= 0 \\
-\DphiIV{}\VRIloop\Big|_{v} &= 0
-\end{align}
-Codesponding derivatives are:
-\begin{align}
-\DphiII{}\VRIloop = &\frac{9e^4\varphi_1^2}{16\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-
-\frac{5}{6}+\log{\frac{e^2\varphi_1^2}{4\pi\mu^2}}\Big)+\frac{21e^4}{32\pi^2}\varphi_1^2+ 
-12\cl\dl\varphi_1^2+2\cm\dm \\
-\DphiIV{}\VRIloop = &\frac{9e^4\varphi_1^2}{8\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-
-\frac{5}{6}+\log{\frac{e^2\varphi_1^2}{4\pi\mu^2}}\Big)+\frac{75e^4}{16\pi^2}+24\cl\dl.
-\end{align}
-So the conditions take form:
-\begin{align}
-&\frac{9e^4v^2}{16\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-
-\frac{5}{6}+\log{\frac{e^2v^2}{4\pi\mu^2}}\Big)+\frac{21e^4}{32\pi^2}v^2+ 
-12\cl\dl v^2+2\cm\dm = 0\\
-&\frac{9e^4v^2}{8\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-
-\frac{5}{6}+\log{\frac{e^2v^2}{4\pi\mu^2}}\Big)+\frac{75e^4}{16\pi^2}+24\cl\dl = 0.
-\end{align}
-Solving for $\dl$ and $\dm$ we have:
-\begin{align}
-\dl = &\frac{-e^4}{64\pi^2\cl}\Big(3\big(-\frac{2}{\epsilon}+\gamma_E-
-\frac{5}{6}+\log\frac{e^2v^2}{4\pi\mu^2}\big)+\frac{25}{2}\Big) \\
-\dm = &\frac{27e^4v^2}{32\pi^2\cm}.
-\end{align}
-Then, the renormalised potential is:
-\begin{align}
-V_R = \cl\lambda\varphi_1^4 + \frac{e^4\varphi_1^4}{64\pi^2}\Big(3\log\frac{\varphi_1^2}{v^2}- 
-\frac{25}{2}\Big)+
-\frac{27e^4v^2\varphi_1^2}{32\pi^2}
-\end{align}
-We would like to write $V_R$ in terms of $M_P$ -- the physical mass and $v$.
-First relation is $\lambda = \frac{M_P^2}{12\cl v^2}$. Potential writen with this substitution 
-becames:
-\begin{align}
-V_R = \frac{M_P^2\varphi_1^4}{12v^2} + \frac{e^4\varphi_1^4}{64\pi^2}\Big(3\log
-\frac{\varphi_1^2}{v^2}- 
-\frac{25}{2}\Big)+
-\frac{27e^4v^2\varphi_1^2}{32\pi^2}
-\end{align}
-%Writing it with $M_P = 12\cl\lambda v^2$ -- physical mass, as a parameter, instead of 
-%$\lambda$ gives us:
-%\begin{align}
-%\VRIloop = \frac{3e^4\varphi^4}{64\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-\frac{5}{6}+
-%\log{\frac{e^2\varphi_1^2}{4\pi\mu^2}}\Big) + \cl\dl\varphi_1^4+\cm\dm\varphi_1^2
-%\end{align}
-To write $e$ in terms of $M_P$ and $v$ we use the condition that 
-\begin{align}
-\DphiI{}\VR\Big|_{v} &= 0 
-\end{align}
-as $v$ is by definition minimum of the potential. \\
-It gives the relation:
-\begin{align}
-\frac{M_P^2v}{3}+\frac{e^4v^3}{16\pi^2}\Big(-\frac{25}{2}\Big)+\frac{3e^4v^3}{32\pi^2}+
-\frac{27e^4v^3}{16\pi^2} = 0
-\end{align}
-Thus, we conclude that: 
-\begin{equation}
-e^4=\frac{-M_P^2\pi^2}{3v^2}.
-\end{equation}
-This, unfortunatelly, is unacceptable, as then $e$ is no longer a real number, which is 
-unphysical.
-Thus, we conclude, that presented renormalisation method is not working and we need to search for 
-another. One of possible ways is to expand the method to finite momentum. \\
-\todo{czy zostawić, to co poniżej}
-We will now investigate, whether this has some chance of working by comparing 
-above "zero momentum" method, only with first and second derivative, with "finite momentum" 
-method and it's zero momentum limit. \\
-With the conditions:
-\begin{align}
-\DphiI{}\VRIloop\Big|_{v} &= 0 \\
-\DphiII{}\VRIloop\Big|_{v} &= 0
-\end{align}
-renormalisation constants $\dl$ and $\dm$ take form:
-\begin{align}
-\dl =& -\frac{e^4}{8\pi^2}-\frac{3e^4}{16\pi^2}\Big(-\frac{2}{\epsilon}-\gamma_E+\log{
-\frac{e^2v^2}{4\pi\mu^2}}\Big)\\
-\dm =& \frac{3e^4v^2}{16\pi^2}.
-\end{align}
-And the renormalised potential is equal to:
-\begin{align}
-V_R = \frac{M_P^2}{48\cl v^2}+\frac{e^4\varphi_1^4}{128\pi^2}\Big(6\log{
-\frac{\varphi_1^2}{v^2}} - 9\Big)+\frac{3e^4v^2\varphi_1^2}{32\pi^2}.
-\end{align}
-Now, however, the condition for $v$ is meaningless ass we already used it in renormalisation 
-conditions. Nethertheless, we want to investigate how values of $\dl$ and $\dm$ are compared 
-to other approaches.
-%\subsubsection{With mass term}
-%For comparison, we include also a version of this aprouch steming from \ref{mass_term}.
-%Inclusion of the mass term do not change the
-%form of $\dl$ and $\dm$. The frist difference occurs in the potential. \\
-%First we will describe the case with derivatives II and IV used in renormalisation conditions. 
-%Then the potential is equal:
-%\begin{align}
-%V_R = \cl\lambda\varphi_1^4 + \cm m^2\varphi_1^2 +
-%\frac{e^4\varphi_1^4}{64\pi^2}\Big(3\log\frac{\varphi_1^2}{v^2}- 
-%\frac{25}{2}\Big)+
-%\frac{27e^4v^2\varphi_1^2}{32\pi^2}.
-%\end{align}
-%Now, we have that $M_P = 12\cl\lambda v^2 + 2\cm m^2$. 
-%No, we will use the condition, that:
-%\begin{align}\label{tree_first}
-%\DphiI{}\VT\Big|_v = 0
-%\end{align}
-%we have that $4\cl\lambda v^3+2\cm m^2v = 0$, so $\lambda = -\frac{\cm m^2}{2\cl v^2}$, so 
-%\begin{align}
-%m^2&=\frac{-M_P^2}{4\cm} \textrm{\ \ and}\\ 
-%\lambda &= \frac{M_P^2}{8\cl v^2}. 
-%\end{align}
-%Writing $V_R$ with respect to that gives:
-%\todo{pytanie}
-%\begin{align}
-%V_R = \frac{M_P^2\varphi_1^4}{8v^2}-\frac{M_P^2\varphi_1^2}{4} + 
-%\frac{e^4\varphi_1^4}{64\pi^2}\Big(3\log
-%\frac{\varphi_1^2}{v^2}- 
-%\frac{25}{2}\Big)+
-%\frac{27e^4v^2\varphi_1^2}{32\pi^2}
-%\end{align}
-%From this we have, that:
-%\begin{equation}
-%\frac{e^4v^3}{\pi^2} = 0,
-%\end{equation}
-%which is also a not safisying result. \\
-%However, if we drop the condition, that 
-%$\DphiI{}\VT\Big|_v = 0$, we have potential in the form:
-%\begin{align}
-%V_R = \frac{M_P^2-2\cm m^2}{12v^2}\varphi_1^4+\cm m^2\varphi_1^2 + 
-%\frac{e^4\varphi_1^4}{64\pi^2}\Big(3\log
-%\frac{\varphi_1^2}{v^2}- 
-%\frac{25}{2}\Big)+
-%\frac{27e^4v^2\varphi_1^2}{32\pi^2}
-%\end{align}
-%From thism, using the condition that $\DphiI{}\VR\Big|_v = 0$, we can derive the 
-%correspondence between $e$ and $M_P$, $v$ and $m$:
-%\begin{equation}
-%e^4 = -\frac{(M_P^2+4\cm m^2)\pi^2}{3v^2},
-%\end{equation}
-%which is finally a sensible result as it can be realised with real, positive $e$. However, then 
-%it must hold that $m^2<-\frac{M_P^2}{4\cm}$.
-%\subsection{"Limits" version}
+
 
 
 

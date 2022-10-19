@@ -10,5 +10,7 @@ mv "../${old_title}" "../${new_title}"
 ln -s "../LaTeX/TeX_files/${new_title}.tex" "../${new_title}/${new_title}.tex" 
 
 echo ${new_title}
+new_title_no_underscores=$(echo ${new_title} | sed 's/_/ /g')
+echo ${new_title_no_underscores}
 
 git_ignore_symlinks.sh
