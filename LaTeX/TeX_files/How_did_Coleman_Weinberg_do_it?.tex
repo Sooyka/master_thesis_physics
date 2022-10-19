@@ -15,7 +15,7 @@ V=\frac{\lambda}{4!}\varphi_c^4,
 \end{align}
 and up to the one loop level is:
 \begin{align}
-V = \frac{\lambda}{4!}\varphi_c^4-\frac{1}{2}B\varphi_c^2-\frac{1}{4!}C\varphi_c^4 + 
+V = \frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2+\frac{1}{4!}C\varphi_c^4 + 
 i\int\frac{d^4k}{(2\pi)^4}\sum\limits_{n=1}^\infty\frac{1}{2n}
 \left(\frac{\frac{1}{2}\lambda\varphi_c^2}{k^2+i\epsilon}\right)^n.
 \end{align} 
@@ -23,7 +23,7 @@ This expression seems "hideously infrared divergent". It is thus transformed int
 in Euclidean space with apparent infrared divergence turned into logarithmic singularity at 
 $\varphi_c=0$:
 \begin{align}
-V=\frac{\lambda}{4!}\varphi_c^4-\frac{1}{2}B\varphi_c^2-\frac{1}{4!}C\varphi_c^4 +
+V=\frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2+\frac{1}{4!}C\varphi_c^4 +
 \frac{1}{2}\int\frac{d^4k}{(2\pi)^4}\ln\left(1+\frac{\lambda\varphi_c^2}{2k^2}\right).
 \end{align}
 This is then calculated using cut-off method, with cut off ad $k^2 = \Lambda^2$. 
@@ -110,12 +110,12 @@ whether it was indeed the same, as well as, whether applied procedure is eligibl
 Let us start with the effective potential with not yet calculated integrals and not yet evaluated 
 renormalisation constants:
 \begin{align}
-V = &\frac{\lambda}{4!}\varphi_c^4-\frac{1}{2}B\varphi_c^2-\frac{1}{4!}C\varphi_c^4 + \notag \\
-&i\int\frac{d^4k}{(2\pi)^4}\sum\limits_{n=1}^\infty\frac{1}{2n}
-\left(\frac{\frac{1}{2}\lambda\varphi_c^2}{k^2+i\epsilon}\right)^n + \notag \\
-&i\int\frac{d^4k}{(2\pi)^4}\sum\limits_{n=1}^\infty\frac{1}{2n}
-\left(\frac{\frac{1}{6}\lambda\varphi_c^2}{k^2+i\epsilon}\right)^n + \notag \\
-&i\int\frac{d^4k}{(2\pi)^4}3\sum\limits_{n=1}^\infty\frac{1}{2n}
+V = &\frac{\lambda}{4!}\varphi_c^4-\frac{1}{2}B\varphi_c^2-\frac{1}{4!}C\varphi_c^4  \notag \\
+&+i\int\frac{d^4k}{(2\pi)^4}\sum\limits_{n=1}^\infty\frac{1}{2n}
+\left(\frac{\frac{1}{2}\lambda\varphi_c^2}{k^2+i\epsilon}\right)^n  \notag \\
+&+i\int\frac{d^4k}{(2\pi)^4}\sum\limits_{n=1}^\infty\frac{1}{2n}
+\left(\frac{\frac{1}{6}\lambda\varphi_c^2}{k^2+i\epsilon}\right)^n  \notag \\
+&+i\int\frac{d^4k}{(2\pi)^4}3\sum\limits_{n=1}^\infty\frac{1}{2n}
 \left(\frac{e^2\varphi_c^2}{k^2+i\epsilon}\right)^n.
 \end{align}
 This can be transformed as previously from this infrared divergent form, to the form woth 
@@ -134,9 +134,9 @@ V=&\frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2+\frac{1}{4!}C\varphi_c^
 &\frac{\lambda\Lambda^2}{3\cdot 64\pi^2}\varphi_c^2+\frac{\lambda^2\varphi_c^4}{9\cdot 256\pi^2}
 \left(\ln\frac{\lambda\varphi_c^2}{6\Lambda^2}-\frac{1}{2}\right) + \notag \\
 &\frac{3e^2\Lambda^2}{32\pi^2}\varphi_c^2+\frac{3e^4\varphi_c^4}{64\pi^2}
-\left(\ln\frac{e^2\varphi_c^2}{\Lambda^2}-\alpha\right),
+\left(\ln\frac{e^2\varphi_c^2}{\Lambda^2}-\frac{1}{2}\right).
 \end{align}
-where $\alpha$ is some numerical constant.
+%where $\alpha$ is some numerical constant.
 
 \subsection{Renormalisation}\label{CW_renormalisation_scalar_el}
 Now, it starts the fun part. \\
@@ -199,8 +199,8 @@ V = &\frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2 + \notag \\
 &\left(\frac{5\lambda^2}{1152\pi^2}+\frac{3e^4}{64\pi^2}\right)\varphi_c^4
 \left(\ln\frac{\varphi_c^2}{M^2}-\frac{25}{6}\right).
 \end{align}
-Let us notice, that the constant $\alpha$ disappeared entearly from the expression as it was 
-canceld out. \\
+%Let us notice, that the constant $\alpha$ disappeared entearly from the expression as it was 
+%canceld out. \\
 Let us notice, that above potential differs from \cite{Coleman1973}(4.5) only by the terms:
 \begin{align}
 \frac{1}{2}B\varphi_c^2 + 
@@ -226,7 +226,7 @@ Then, the renormalised potential is indeed:
 \begin{align}
 V = \frac{\lambda}{4!}\varphi_c^4+
 \left(\frac{5\lambda^2}{1152\pi^2}+\frac{3e^4}{64\pi^2}\right)\varphi_c^4
-\left(\ln\frac{\varphi_c^2}{M^2}-\frac{25}{6}\right).
+\left(\ln\frac{\varphi_c^2}{M^2}-\frac{25}{6}\right)
 \end{align}
 as in \cite{Coleman1973}(4.5), but what is important is, then indeed
 \begin{align}
