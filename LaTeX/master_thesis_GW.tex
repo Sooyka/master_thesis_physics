@@ -6,7 +6,7 @@
 \newcommand{\cl}{c_\lambda}
 \newcommand{\cm}{c_m}
 
-\newcommand{\MSbar}{$\overline{\textrm{MS}}\ $}
+\newcommand{\MSbar}{{${\overline{\textrm{MS}}}$}}
 
 \newcommand{\dZ}{\delta Z}
 \newcommand{\dZphi}{\delta Z_\varphi}
@@ -22,6 +22,9 @@
 
 \newcommand{\Rep}[1]{\Re\left(#1\right)}
 
+\newcommand{\Dphi}[2]{{\frac{d^{#1}}{d \varphi_1^{#1}}#2}}
+\newcommand{\Dphiat}[3]{{\frac{d^{#1}}{d \varphi_1^{#1}}#2\Big|_{#3}}}
+
 \newcommand{\DphiI}[1]{\frac{\partial #1}{\partial \varphi_1}}
 \newcommand{\DphiII}[1]{\frac{\partial^2 #1}{\partial \varphi_1^2}}
 \newcommand{\DphiIIV}[1]{\frac{\partial^3#1}{\partial \varphi_1^3}}
@@ -36,6 +39,8 @@
 
 \newcommand{\lVEV}{{\langle\varphi\rangle}}
 
+\newcommand{\citeColWein}{\cite{Coleman1973}}
+
 \begin{document}
 \input{"./TeX_files/title_page.tex"}
 \newpage
@@ -47,12 +52,14 @@ Aąężźćńłóś
 \end{abstract}
 \input{"./TeX_files/Introduction.tex"}
 \input{"./TeX_files/Technical_introduction.tex"}
-\input{"./TeX_files/How_did_Coleman_Weinberg_do_it?.tex"}
 \input{"./TeX_files/Calculation_of_the_effective_potential.tex"}
-\input{"./TeX_files/Mass_term_case.tex"}
+\input{"./TeX_files/How_did_Coleman_Weinberg_do_it?.tex"}
 \input{"./TeX_files/MS_bar_renormalisation_of_the_effective_potential.tex"}
 \input{"./TeX_files/On_shell_renormalisation_of_the_effective_potential_finite_momentum.tex"}
 \input{"./TeX_files/On_shell_renormalisation_of_the_effective_potential_zero_momentum.tex"}
+\input{"./TeX_files/Summary.tex"}
 \input{"./TeX_files/Conclusions.tex"}
+\appendix
+\input{"./TeX_files/Mass_term_case.tex"}
 \input{"./TeX_files/bibliography.tex"}
 \end{document}

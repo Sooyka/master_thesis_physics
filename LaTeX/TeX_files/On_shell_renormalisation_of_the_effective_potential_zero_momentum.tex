@@ -1,22 +1,137 @@
 % mainfile: ../master_thesis_GW.tex
-\chapter{On shell renormalisation of the effective potential -- zero momentum approach}
+\chapter{Zero momentum approach}
 
-%\section{Zero momentum approach}
-%\subsubsection{No mass term}
-We are concerned with the theory described by \ref{scalar_electrodynamics}:
-\begin{align}
-\mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+ 
-\frac{1}{2}(\partial_\mu\varphi_1 - eA_\mu\varphi_2)^2\\
-+\frac{1}{2}(\partial_\mu\varphi_2+eA_\mu\varphi_1)^2
--\cl\lambda(\varphi_1^2+\varphi_2^2)^2. \notag
-\end{align}
 Here, as well, we will consider potential up to order $e^4$. \\
 We start with the 1-loop level potential with counterterms:
 \begin{align}
-\VRIloop = \frac{3e^4\varphi_1^4}{64\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-\frac{5}{6}+
-\log{\frac{e^2\varphi_1^2}{4\pi\mu^2}}\Big) + \cl\dl\varphi_1^4+\cm\dm\varphi_1^2.
+\VRIloop = \frac{3e^4}{64\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-\frac{5}{6}+
+\log{\frac{e^2\varphi_1^2}{4\pi\mu^2}}\Big)\varphi_1^4 + \cl\dl\varphi_1^4+\cm\dm\varphi_1^2.
+\end{align} 
+Note, that when we will write $v$, meaning VEV, the vacuum expectation value, we will mean 
+1-loop level VEV. \\ 
+Here we will present the approach more simmilar to one from \cite{Coleman1973}. 
+The renormalisation conditions will be of the form:
+\begin{align}
+\frac{d^k}{d\varphi_1^k}V\Big|_{\alpha} = \beta
 \end{align}
-We will present three different versions of possible renormalisation conditions. 
+where V is some part of the renormalized effective potential and $\alpha$, $\beta$ are some 
+parameteres that will vary between the versions we will present here. \\
+In this way renoramlisation conditions are stated only in terms of the effective potential itself 
+without refering to self energy. As a on-shell condition we treat:
+\begin{align}
+\Dphi{2}{\VRIloop}\Big|_v = 0
+\end{align}
+as it is, in a sense, a zero-momentum version of the condition of preservation of the tree 
+level mass at the one-loop level. \\
+In \cite{Coleman1973} the conditions used were (see \ref{CWchapter}):
+\begin{align}
+\Dphiat{2}{V_R}{0} &= 0 \\
+\Dphiat{4}{V_R}{v} &= 24\cl\lambda.
+\end{align}
+Note, that, in \citeColWein, as mentioned in \ref{CWchapter}, the convention is used, that 
+$\cl = 4!$. \\
+%\section{Zero momentum approach}
+%\subsubsection{No mass term}
+%We are concerned with the theory described by \ref{scalar_electrodynamics}:
+%\begin{align}
+%\mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+ 
+%\frac{1}{2}(\partial_\mu\varphi_1 - eA_\mu\varphi_2)^2\\
+%+\frac{1}{2}(\partial_\mu\varphi_2+eA_\mu\varphi_1)^2
+%-\cl\lambda(\varphi_1^2+\varphi_2^2)^2. \notag
+%\end{align}
+We will present a few different versions of possible renormalisation conditions.
+\section{Analoguos to Coleman-Weinberg}
+As renormalisation conditions we impose that:
+\begin{align}
+\DphiII{}\VR\Big|_{0} &= 0 \\
+\DphiIV{}\VR\Big|_{v} &= 24\cl\lambda.
+\end{align}
+These are exactly the same conditions as presented in \citeColWein. We calculate it here once 
+again for two reasons: \\ 
+Firstly -- we use different regularisation, so, although we expect 
+for the resulting potential to be the same, the intermediate steps may (and will) differ. 
+We think, that 
+presenting them here can give a better inside what is going on and better reference to compare 
+with other presented versions of the scheme. \\
+Secondly -- we will now write it with our convention of naming things, so it will be a better 
+for reference
+to compare with other versions of the scheme for this reason too. \\
+Codesponding derivatives are:
+\begin{align}
+\DphiII{}\VRIloop = &\frac{9e^4\varphi_1^2}{16\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-
+\frac{5}{6}+\log{\frac{e^2\varphi_1^2}{4\pi\mu^2}}\Big)+\frac{21e^4}{32\pi^2}\varphi_1^2+ 
+12\cl\dl\varphi_1^2+2\cm\dm \\
+\DphiIV{}\VRIloop = &\frac{9e^4\varphi_1^2}{8\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-
+\frac{5}{6}+\log{\frac{e^2\varphi_1^2}{4\pi\mu^2}}\Big)+\frac{75e^4}{16\pi^2}+24\cl\dl.
+\end{align}
+So the conditions take form:
+\begin{align}
+&2\cm\dm = 0\\
+&\frac{9e^4v^2}{8\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-
+\frac{5}{6}+\log{\frac{e^2v^2}{4\pi\mu^2}}\Big)+\frac{75e^4}{16\pi^2}+24\cl\dl = 0.
+\end{align}
+Solving for $\dl$ and $\dm$ we have:
+\begin{align}
+\dm &= 0 \\
+\dl &= -\frac{3e^4}{64\pi^2\cl}\Big(-\frac{2}{\epsilon}+\gamma_E-
+\frac{5}{6}+\log\frac{e^2v^2}{4\pi\mu^2}\Big)-\frac{25e^4}{128\pi^2\cl} .
+\end{align}
+Then, the renormalised potential is:
+\begin{align}
+V_R = \cl\lambda + \frac{3e^4\varphi_1^4}{64\pi^2}\Big(- 
+\frac{25}{6}+\log\frac{\varphi_1^2}{v^2}\Big)\varphi_1^4.
+\end{align}
+Which is identical to the one from \citeColWein, as described in \ref{CWe4potential} and all the 
+results for expressing $\lambda$ as $e$ and $v$. As well as relations between $\lambda$, $e$ and 
+the pshysical mass would be the same as in \citeColWein. \\
+We can bind $\lambda$ to $e$ and $v$ at the loop level from the VEV definition:
+\begin{align}
+\DphiI\VR \Big|_v= 0.
+\end{align}
+This gives the condition:
+\begin{align}
+4\cl\lambda v^3-\frac{25e^4v^3}{32\pi^2}+\frac{3e^4v^3}{32\pi^2}=0.
+\end{align}
+Which gives:
+\begin{align}\label{e4_lambda_MS}
+\lambda = \frac{11e^4}{64\cl\pi^2}.
+\end{align}
+Writing potential with this substitution yields:
+\begin{align}\label{asCWresult}
+V_R = \frac{3e^4}{64\pi^2}\Big(-\frac{1}{2}+\log\frac{\varphi_1^2}{v^2}\Big)\varphi_1^4.
+\end{align}
+This is, as expected, exactly same potential as in \citeColWein. \\
+We can now also bind square of the physical mass $M_P^2$ as the second derivative of the 
+renormalised effective potential at VEV. The result for expressing $M_P^2$ in terms 
+of $e$, as well as the ratio between scalar and vector mass will be the same as in the 
+\ref{MSbar physical mass} and \citeColWein as they depend only on the form 
+of the potential as in \ref{asCWresult}. 
+
+\begin{align}
+M_P^2 = \DphiII\VR \Big|_v = \frac{9e^4}{16\pi^2}\Big(-\frac{1}{2}\Big)v^2+\frac{3e^4v^2}{8\pi^2} 
++\frac{9e^4v^2}{32\pi^2}.
+\end{align}
+This gives that:
+\begin{align}
+M_P^2 = \frac{3e^4v^2}{8\pi^2}.
+\end{align}
+
+From this we have that the ratio between scalar mass $M_P^2$ and vector mass $m(V)^2$ is:
+\begin{align}
+\frac{M_P^2}{m(V)^2} = \frac{\frac{3e^4v^2}{8\pi^2}}{e^2v^2} = \frac{3e^2}{8\pi^2}.
+\end{align}
+
+We can now also express $e^4$ and $\lambda$ in terms of $M_P^2$ and $v$ (this part will 
+be different than in \ref{asCWresult} or \citeColWein for $\lambda$):
+\begin{align}
+e^4 = \frac{8M_P^2\pi^2}{3v^2} \\
+\lambda = \frac{11M_P^2}{24\cl v^2}.
+\end{align}
+
+Writing potential in these terms gives:
+\begin{align}
+V_R = \frac{M_P^2}{8v^2}\Big(-\frac{1}{2}+\log\frac{\varphi_1^2}{v^2}\Big)\varphi_1^4.
+\end{align}
 \section{Vanishing derivatives}
 As renormalisation conditions we impose that:
 \begin{align}
@@ -41,24 +156,23 @@ So the conditions take form:
 \end{align}
 Solving for $\dl$ and $\dm$ we have:
 \begin{align}
-\dl = &\frac{-e^4}{64\pi^2\cl}\Big(3\big(-\frac{2}{\epsilon}+\gamma_E-
-\frac{5}{6}+\log\frac{e^2v^2}{4\pi\mu^2}\big)+\frac{25}{2}\Big) \\
-\dm = &\frac{27e^4v^2}{32\pi^2\cm}.
+\dm = &\frac{27e^4v^2}{32\pi^2\cm} \\
+\dl = &-\frac{3e^4}{64\pi^2\cl}\Big(-\frac{2}{\epsilon}+\gamma_E-
+\frac{5}{6}+\log\frac{e^2v^2}{4\pi\mu^2}\Big)-\frac{75e^4}{128\pi^2\cl}.
 \end{align}
 Then, the renormalised potential is:
 \begin{align}
-V_R = \cl\lambda\varphi_1^4 + \frac{e^4\varphi_1^4}{64\pi^2}\Big(3\log\frac{\varphi_1^2}{v^2}- 
-\frac{25}{2}\Big)+
-\frac{27e^4v^2\varphi_1^2}{32\pi^2}.
+V_R = \cl\lambda\varphi_1^4 + \frac{3e^4}{64\pi^2}\Big(- 
+\frac{25}{6}+\log\frac{\varphi_1^2}{v^2}\Big)\varphi_1^4+
+\frac{27e^4v^2}{32\pi^2}\varphi_1^2.
 \end{align}
 We would like to write $V_R$ in terms of $M_P$ -- the physical mass and $v$.
 First relation is $\lambda = \frac{M_P^2}{12\cl v^2}$. Potential writen with this substitution 
 becames:
 \begin{align}
-V_R = \frac{M_P^2\varphi_1^4}{12v^2} + \frac{e^4\varphi_1^4}{64\pi^2}\Big(3\log
-\frac{\varphi_1^2}{v^2}- 
-\frac{25}{2}\Big)+
-\frac{27e^4v^2\varphi_1^2}{32\pi^2}.
+V_R = \frac{M_P^2}{12v^2}\varphi_1^4 + \frac{3e^4}{64\pi^2}\Big(- \frac{25}{6} + \log
+\frac{\varphi_1^2}{v^2}\Big)\varphi_1^4+
+\frac{27e^4v^2}{32\pi^2}\varphi_1^2.
 \end{align}
 %Writing it with $M_P = 12\cl\lambda v^2$ -- physical mass, as a parameter, instead of 
 %$\lambda$ gives us:
@@ -84,8 +198,8 @@ This, unfortunatelly, is unacceptable, as then $e$ is no longer a real number, w
 unphysical.
 Thus, we conclude, that presented renormalisation method is not working and we need to search for 
 another. One of possible ways is to expand the method to finite momentum. \\
-\subsection{Comparison}
 \todo{czy zostawić, to co poniżej}
+\subsection{Comparison}
 We will now investigate, whether this has some chance of working by comparing 
 above "zero momentum" method, only with first and second derivative, with "finite momentum" 
 method and it's zero momentum limit. \\
@@ -183,11 +297,11 @@ v^2}{\mu^2}\Big)
 Written in the full form these conditions take form:
 \begin{align}
 &\frac{9e^4}{16\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-\frac{5}{6}+\log\frac{e^2
-v^2}{4\pi\mu^2}\Big)v^2+ \notag\\
-& 12\cl\dl v^2+\frac{21e^4}{32\pi^2}v^2+2\cm\dm = 0 \\
+v^2}{4\pi\mu^2}\Big)v^2 \notag\\
+&+ 12\cl\dl v^2+\frac{21e^4}{32\pi^2}v^2+2\cm\dm = 0 \\
 &\frac{9e^4}{8\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-\frac{5}{6}+\log\frac{e^2v^2}{4\pi\mu^2}\Big)+
-24\cl\dl+\frac{75e^4}{16\pi^2} = \notag \\
-&\frac{9e^4}{8\pi^2}\Big(-\frac{5}{6}+\log\frac{e^2v^2}{\mu^2}\Big)+\frac{75e^4}{16\pi^2}.
+24\cl\dl+\frac{75e^4}{16\pi^2}  \notag \\
+&=\frac{9e^4}{8\pi^2}\Big(-\frac{5}{6}+\log\frac{e^2v^2}{\mu^2}\Big)+\frac{75e^4}{16\pi^2}.
 \end{align}
 After solving equations for $\dm$ and $\dl$ we obtain:
 \begin{align}
@@ -198,8 +312,8 @@ After solving equations for $\dm$ and $\dl$ we obtain:
 The renormalized potential is then:
 \begin{align}
 \VR = &\cl\lambda\varphi_1^4 + \notag \\ 
-&\frac{3e^4}{64\pi^2}\Big(-\frac{5}{6}+\log\frac{e^2\varphi_1^2}{\mu^2}\Big)\varphi_1^4+ \notag\\
-&\frac{3e^4v^2}{32\pi^2}\Big(-1-3\log\frac{e^2v^2}{\mu^2}\Big)\varphi_1^2.
+&\frac{3e^4}{64\pi^2}\Big(-\frac{5}{6}+\log\frac{e^2\varphi_1^2}{\mu^2}\Big)\varphi_1^4 \notag\\
+&+\frac{3e^4v^2}{32\pi^2}\Big(-1-3\log\frac{e^2v^2}{\mu^2}\Big)\varphi_1^2.
 \end{align}
 From the tree level potential we have the relation $\lambda = \frac{M_P^2}{12\cl v^2}$. 
 Written in these terms we have:
@@ -255,9 +369,9 @@ We will follow, what was done in \cite{Coleman1973}, as described in
 which is equvalent to the condition for $\DphiII{\VR}\Dat{0} = 0$. \\
 We can see, that in the renormalised potential:
 \begin{align}
-\VR = \cl\lambda\varphi_1^4 + \frac{3e^4\varphi_1^4}{64\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E- 
+\VR = \cl\lambda\varphi_1^4 + \frac{3e^4}{64\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E- 
 \frac{5}{6}+
-\log{\frac{e^2\varphi_1^2}{4\pi\mu^2}}\Big) + \cl\dl\varphi_1^4+\cm\dm\varphi_1^2
+\log{\frac{e^2\varphi_1^2}{4\pi\mu^2}}\Big)\varphi_1^4 + \cl\dl\varphi_1^4+\cm\dm\varphi_1^2
 \end{align}
 only term square in the fields is $\cm\dm\varphi_1^2$, therefore $\dm$ should be zero. \\
 Note, that it is not the same as disregarding $\dm$ automaticly. As stated in \cite{Coleman1973}, 
@@ -275,9 +389,9 @@ Therefore we impose following renormalising conditions:
 \end{align}
 Written in the full form these conditions take form:
 \begin{align}
-&\frac{9e^4}{16\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-\frac{5}{6}+\log\frac{e^2
-v^2}{4\pi\mu^2}\Big)v^2+ \notag\\
-& 12\cl\dl v^2+\frac{21e^4}{32\pi^2}v^2+2\cm\dm = 0 \\
+&\frac{9e^4v^2}{16\pi^2}\Big(-\frac{2}{\epsilon}+\gamma_E-\frac{5}{6}+\log\frac{e^2
+v^2}{4\pi\mu^2}\Big) \notag\\
+&+12\cl\dl v^2+\frac{21e^4}{32\pi^2}v^2+2\cm\dm = 0 \\
 %&\dm = 0
 &\DphiII{}\VR\Dat{0} = 0.
 \end{align}
@@ -310,7 +424,8 @@ Which gives:
 \begin{align}
 e^4 = \frac{8M_P^2\pi^2}{3v^2}.
 \end{align}
-Writing potential with this substitutions yields asdad:
+Writing potential with this substitutions yields:
+%asdad
 \begin{align}
 V_R = \frac{M_P^2}{8v^2}\Big(-\frac{1}{2}+\log\frac{\varphi_1^2}{v^2}\Big)\varphi_1^4.
 \end{align}
@@ -318,8 +433,9 @@ Potential can be written also in terms of $v$ and $e$:
 \begin{equation}
 V_R=\frac{3e^4}{64\pi^2}\Big(-\frac{1}{2}+\log\frac{\varphi_1^2}{v^2}\Big)\varphi_1^4.
 \end{equation}
-Note, that, this is exactly same potential as in \cite{Coleman1973} and \ref{MSbar_result}, 
-so, following quantities must be the same as there: \\
+Note, that, this is exactly same potential as in \cite{Coleman1973} and \ref{MSbar_result}. 
+%so, following quantities must be the same as there: \\
+We can now calculate following quantities:
 \hspace*{0.5cm}- relation between $\lambda$ and $e^4$:
 \begin{align}
 \lambda = \frac{e^4}{32\cl\pi^2},

@@ -1,5 +1,5 @@
 % mainfile: ../master_thesis_GW.tex
-\chapter{How did Coleman Weinberg do it?}
+\chapter{How did Coleman Weinberg do it?}\label{CWchapter}
 \section{\texorpdfstring{$\lambda\varphi^4$}{Lambda phi to the fourth} theory}
 Coleman and Weinberg in \cite{Coleman1973} start with "$\lambda\varphi^4$" model, namely, with 
 Lagransian:
@@ -19,9 +19,10 @@ V = \frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2+\frac{1}{4!}C\varphi_c
 i\int\frac{d^4k}{(2\pi)^4}\sum\limits_{n=1}^\infty\frac{1}{2n}
 \left(\frac{\frac{1}{2}\lambda\varphi_c^2}{k^2+i\epsilon}\right)^n.
 \end{align} 
-This expression seems "hideously infrared divergent". It is thus transformed into one 
-in Euclidean space with apparent infrared divergence turned into logarithmic singularity at 
-$\varphi_c=0$:
+As mentioned in \cite{Coleman1973} and 
+\ref{divergent sums}, this expression seems "hideously infrared divergent". It is thus transformed 
+into one in Euclidean space with apparent infrared divergence turned into logarithmic 
+singularity at $\varphi_c=0$:
 \begin{align}
 V=\frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2+\frac{1}{4!}C\varphi_c^4 +
 \frac{1}{2}\int\frac{d^4k}{(2\pi)^4}\ln\left(1+\frac{\lambda\varphi_c^2}{2k^2}\right).
@@ -99,7 +100,7 @@ V = \frac{\lambda}{4!}\varphi_c^4+\left(\frac{5\lambda^2}{1152\pi^2}+\frac{3e^4}
 whith only a brief note, that it is obtained after "straightforward computation" 
 %and it is implied that the procedure was the same as in the $\lambda\varphi^4$ case
 .\\
-We will now investigate more carefouly this omited step
+We will now investigate more carefully this omited step
 %and whether it was indeed the same as 
 %presented in the previous case, as well as, whether this procedure is eligible for this theory.
 .\\
@@ -118,22 +119,22 @@ V = &\frac{\lambda}{4!}\varphi_c^4-\frac{1}{2}B\varphi_c^2-\frac{1}{4!}C\varphi_
 &+i\int\frac{d^4k}{(2\pi)^4}3\sum\limits_{n=1}^\infty\frac{1}{2n}
 \left(\frac{e^2\varphi_c^2}{k^2+i\epsilon}\right)^n.
 \end{align}
-This can be transformed as previously from this infrared divergent form, to the form woth 
+This can be transformed as previously from this infrared divergent form, to the form with 
 singularity only at $\varphi_c=0$:
 \begin{align}
-V=&\frac{\lambda}{4!}\varphi_c^4-\frac{1}{2}B\varphi_c^2-\frac{1}{4!}C\varphi_c^4 + \notag \\
-&\frac{1}{2}\int\frac{d^4k}{(2\pi)^4}\ln\left(1+\frac{\lambda\varphi_c^2}{2k^2}\right) + \notag \\
-&\frac{1}{2}\int\frac{d^4k}{(2\pi)^4}\ln\left(1+\frac{\lambda\varphi_c^2}{6k^2}\right) + \notag \\
-&\frac{1}{2}\int\frac{d^4k}{(2\pi)^4}3\ln\left(1+\frac{e^2\varphi_c^2}{k^2}\right),
+V=&\frac{\lambda}{4!}\varphi_c^4-\frac{1}{2}B\varphi_c^2-\frac{1}{4!}C\varphi_c^4  \notag \\
+&+\frac{1}{2}\int\frac{d^4k}{(2\pi)^4}\ln\left(1+\frac{\lambda\varphi_c^2}{2k^2}\right)  \notag \\
+&+\frac{1}{2}\int\frac{d^4k}{(2\pi)^4}\ln\left(1+\frac{\lambda\varphi_c^2}{6k^2}\right)  \notag \\
+&+\frac{1}{2}\int\frac{d^4k}{(2\pi)^4}3\ln\left(1+\frac{e^2\varphi_c^2}{k^2}\right),
 \end{align}
 and then calculated using cut-off method at $k^2=\Lambda^2$:
 \begin{align}
-V=&\frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2+\frac{1}{4!}C\varphi_c^4+ \notag \\
-&\frac{\lambda\Lambda^2}{64\pi^2}\varphi_c^2+\frac{\lambda^2\varphi_c^4}{256\pi^2}
-\left(\ln\frac{\lambda\varphi_c^2}{2\Lambda^2}-\frac{1}{2}\right) + \notag \\
-&\frac{\lambda\Lambda^2}{3\cdot 64\pi^2}\varphi_c^2+\frac{\lambda^2\varphi_c^4}{9\cdot 256\pi^2}
-\left(\ln\frac{\lambda\varphi_c^2}{6\Lambda^2}-\frac{1}{2}\right) + \notag \\
-&\frac{3e^2\Lambda^2}{32\pi^2}\varphi_c^2+\frac{3e^4\varphi_c^4}{64\pi^2}
+V=&\frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2+\frac{1}{4!}C\varphi_c^4 \notag \\
+&+\frac{\lambda\Lambda^2}{64\pi^2}\varphi_c^2+\frac{\lambda^2\varphi_c^4}{256\pi^2}
+\left(\ln\frac{\lambda\varphi_c^2}{2\Lambda^2}-\frac{1}{2}\right)  \notag \\
+&+\frac{\lambda\Lambda^2}{3\cdot 64\pi^2}\varphi_c^2+\frac{\lambda^2\varphi_c^4}{9\cdot 256\pi^2}
+\left(\ln\frac{\lambda\varphi_c^2}{6\Lambda^2}-\frac{1}{2}\right)  \notag \\
+&+\frac{3e^2\Lambda^2}{32\pi^2}\varphi_c^2+\frac{3e^4\varphi_c^4}{64\pi^2}
 \left(\ln\frac{e^2\varphi_c^2}{\Lambda^2}-\frac{1}{2}\right).
 \end{align}
 %where $\alpha$ is some numerical constant.
@@ -145,58 +146,63 @@ The first imposed renormalisation condition in the previous ($\lambda\varphi^4$)
 \frac{d^2V}{d\varphi_c^2}\Big|_0=0,
 \end{align}
 where, it was stated, is equivalent, to renormalised mass being zero. \\
-But it is only true, when $\lVEV = 0$. In theory we are discussing now (\ref{CW_electrodynamics}) 
-we can't really use this as (as it is made apparent later in \cite{Coleman1973}, in (4.8)), the 
-whole important later argument is laid upon the fact, that $\lVEV \neq 0$. It also can't be, that 
-we are now dealing with tree level VEV, which is $0$, and after that, we pass to using on-loop 
-level VEV which is non-zero, as the very VEV used in the renormalised condition, should be one 
-of the up to one loop level potential -- thus renormalised one. Or can we? Maybe we can use 
-zero $\lVEV$ now, and not zero $\lVEV$ later. Nevertheless, we shall investigate, whether this is 
-the case, and whether this was used here. \\
+What is important, this "renormalized mass" is not meant to be a physicall mass, rather, 
+the mass parameter, the constant that stand beside second power of the field, 
+which can be defined as "$\frac{d^2V}{d\varphi_c^2}\Big|_0$" itself.
+%But it is only true, when $\lVEV = 0$. In theory we are discussing now (\ref{CW_electrodynamics}) 
+%we can't really use this as (as it is made apparent later in \cite{Coleman1973}, in (4.8)), the 
+%whole important later argument is laid upon the fact, that $\lVEV \neq 0$. It also can't be, that 
+%we are now dealing with tree level VEV, which is $0$, and after that, we pass to using on-loop 
+%level VEV which is non-zero, as the very VEV used in the renormalised condition, should be one 
+%of the up to one loop level potential -- thus renormalised one. Or can we? Maybe we can use 
+%zero $\lVEV$ now, and not zero $\lVEV$ later. Nevertheless, 
+Here it is not explicitly stated, whether this condition is being used in the case of scalar 
+electrodynamics and we shall investigate that matter. \\
+%, whether this is the case, and whether this was used here. \\
 Let us start with the second renormalisation condition, namely:
 \begin{align}
 \frac{d^4V}{d\varphi_c^4}\Big|_M=\lambda,
 \end{align}
-and reverse engeener what happend in \cite{Coleman1973}. \\
+and reverse engeneer what happened in \cite{Coleman1973}. \\
 We can do this, because of the reason stated in \ref{CBreason} as $B$ does not appear in 
 $\frac{d^4V}{d\varphi_c^4}\Big|_M$. \\
 We have that:
 \begin{align}
-\frac{d^4V}{d\varphi_c^4}\Big|_M = &\lambda + C + \notag \\
-&\frac{11\lambda^2}{32\pi^2}+\frac{3\lambda^2}{32\pi^2}\ln\frac{\lambda M^2}{2\Lambda^2}+\notag \\
-&\frac{11\lambda^2}{288\pi^2}+\frac{\lambda^2}{96\pi^2}\ln\frac{\lambda M^2}{6\Lambda^2}+\notag \\
-&\frac{(75-18\alpha)e^4}{16\pi^2}+\frac{9e^4}{8\pi^2}\ln\frac{e^2M^2}{\Lambda^2}. 
+\frac{d^4V}{d\varphi_c^4}\Big|_M = &\lambda + C \notag \\
+&+\frac{11\lambda^2}{32\pi^2}+\frac{3\lambda^2}{32\pi^2}\ln\frac{\lambda M^2}{2\Lambda^2}\notag \\
+&+\frac{11\lambda^2}{288\pi^2}+\frac{\lambda^2}{96\pi^2}\ln\frac{\lambda M^2}{6\Lambda^2}\notag \\
+&+\frac{(75-18\alpha)e^4}{16\pi^2}+\frac{9e^4}{8\pi^2}\ln\frac{e^2M^2}{\Lambda^2}. 
 \end{align}
 From this, for $\frac{d^4V}{d\varphi_c^4}\Big|_M=\lambda$, we conclude that:
 \begin{align}
 C = -\Big(
-&\frac{11\lambda^2}{32\pi^2}+\frac{3\lambda^2}{32\pi^2}\ln\frac{\lambda M^2}{2\Lambda^2}+\notag \\
-&\frac{11\lambda^2}{288\pi^2}+\frac{\lambda^2}{96\pi^2}\ln\frac{\lambda M^2}{6\Lambda^2}+\notag \\
-&\frac{(75-18\alpha)e^4}{16\pi^2}+\frac{9e^4}{8\pi^2}\ln\frac{e^2M^2}{\Lambda^2}
+&\frac{11\lambda^2}{32\pi^2}+\frac{3\lambda^2}{32\pi^2}\ln\frac{\lambda M^2}{2\Lambda^2}\notag \\
+&+\frac{11\lambda^2}{288\pi^2}+\frac{\lambda^2}{96\pi^2}\ln\frac{\lambda M^2}{6\Lambda^2}\notag \\
+&+\frac{(75-18\alpha)e^4}{16\pi^2}+\frac{9e^4}{8\pi^2}\ln\frac{e^2M^2}{\Lambda^2}
 \Big).
 \end{align}
 Subsituing this result to the potential result in:
 \begin{align}
-V=&\frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2- \notag \\
-&\frac{1}{4!}\Big(
-\frac{11\lambda^2}{32\pi^2}+\frac{3\lambda^2}{32\pi^2}\ln\frac{\lambda M^2}{2\Lambda^2}+\notag \\
-&\frac{11\lambda^2}{288\pi^2}+\frac{\lambda^2}{96\pi^2}\ln\frac{\lambda M^2}{6\Lambda^2}+\notag \\
-&\frac{(75-18\alpha)e^4}{16\pi^2}+\frac{9e^4}{8\pi^2}\ln\frac{e^2M^2}{\Lambda^2}
-\Big)\varphi_c^4+ \notag \\
-&\frac{\lambda\Lambda^2}{64\pi^2}\varphi_c^2+\frac{\lambda^2\varphi_c^4}{256\pi^2}
-\left(\ln\frac{\lambda\varphi_c^2}{2\Lambda^2}-\frac{1}{2}\right) + \notag \\
-&\frac{\lambda\Lambda^2}{3\cdot 64\pi^2}\varphi_c^2+\frac{\lambda^2\varphi_c^4}{9\cdot 256\pi^2}
-\left(\ln\frac{\lambda\varphi_c^2}{6\Lambda^2}-\frac{1}{2}\right) + \notag \\
-&\frac{3e^2\Lambda^2}{32\pi^2}\varphi_c^2+\frac{3e^4\varphi_c^4}{64\pi^2}
-\left(\ln\frac{e^2\varphi_c^2}{\Lambda^2}-\alpha\right),
+V=&\frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2 \notag \\
+&-\frac{1}{4!}\Big(
+\frac{11\lambda^2}{32\pi^2}+\frac{3\lambda^2}{32\pi^2}\ln\frac{\lambda M^2}{2\Lambda^2}\notag \\
+&+\frac{11\lambda^2}{288\pi^2}+\frac{\lambda^2}{96\pi^2}\ln\frac{\lambda M^2}{6\Lambda^2}\notag \\
+&+\frac{(75-18\alpha)e^4}{16\pi^2}+\frac{9e^4}{8\pi^2}\ln\frac{e^2M^2}{\Lambda^2}
+\Big)\varphi_c^4 \notag \\
+&+\frac{\lambda\Lambda^2}{64\pi^2}\varphi_c^2+\frac{\lambda^2\varphi_c^4}{256\pi^2}
+\left(\ln\frac{\lambda\varphi_c^2}{2\Lambda^2}-\frac{1}{2}\right)  \notag \\
+&+\frac{\lambda\Lambda^2}{3\cdot 64\pi^2}\varphi_c^2+\frac{\lambda^2\varphi_c^4}{9\cdot 256\pi^2}
+\left(\ln\frac{\lambda\varphi_c^2}{6\Lambda^2}-\frac{1}{2}\right)  \notag \\
+&+\frac{3e^2\Lambda^2}{32\pi^2}\varphi_c^2+\frac{3e^4\varphi_c^4}{64\pi^2}
+\left(\ln\frac{e^2\varphi_c^2}{\Lambda^2}-\frac{1}{2}\right),
 \end{align}
 and after canceling:
 \begin{align}
-V = &\frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2 + \notag \\
-&\frac{\lambda\Lambda^2}{64\pi^2}\varphi_c^2+ 
+V = &\frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2  \notag \\
+&+\frac{\lambda\Lambda^2}{64\pi^2}\varphi_c^2+
 \frac{\lambda\Lambda^2}{3\cdot 64\pi^2}\varphi_c^2+
-\frac{3e^2\Lambda^2}{32\pi^2}\varphi_c^2 + \notag \\
-&\left(\frac{5\lambda^2}{1152\pi^2}+\frac{3e^4}{64\pi^2}\right)\varphi_c^4
+\frac{3e^2\Lambda^2}{32\pi^2}\varphi_c^2  \notag \\
+&+\left(\frac{5\lambda^2}{1152\pi^2}+\frac{3e^4}{64\pi^2}\right)\varphi_c^4
 \left(\ln\frac{\varphi_c^2}{M^2}-\frac{25}{6}\right).
 \end{align}
 %Let us notice, that the constant $\alpha$ disappeared entearly from the expression as it was 
@@ -233,14 +239,16 @@ as in \cite{Coleman1973}(4.5), but what is important is, then indeed
 \frac{d^2V}{d\varphi_c^2}\Big|_0=0,
 \end{align}
 so this was preceisly the condition used to renormalised this potential. \\
-Now this is the mystery: \\
-This condition, in the light of this theory, should not mean the disapperance of the renormalised 
-mass, as $\lVEV \neq 0$ in this theory, and the mass is $\frac{d^2V}{d\varphi_c^2}\Big|_\lVEV$. 
-As such, what physical meaning this condition gives? 
-From the computational point of view, it certainly results in the potential being of order $4$ 
-in the field, but physical one? \\
-In \ref{onshellphi4} we will investigate the on-shell approuch of this method.
-
+%Now this is the mystery: \\
+%This condition, in the light of this theory, should not mean the disapperance of the renormalised 
+%mass, as $\lVEV \neq 0$ in this theory, and the mass is $\frac{d^2V}{d\varphi_c^2}\Big|_\lVEV$. 
+%As such, what physical meaning this condition gives? 
+%From the computational point of view, it certainly results in the potential being of order $4$ 
+%in the field, but physical one? \\
+%In \ref{onshellphi4} we will investigate the on-shell approuch of this method.
+This is precesuily the condition, that guarantees the $\varphi^4$ form of the potential.
+\todo{Napisać o stosunku mas}
+\label{CWe4potential}
 
 
 

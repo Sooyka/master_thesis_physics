@@ -26,6 +26,8 @@
 \usepackage{xcolor}
 %\setmathfont{eulermath}
 %\usepackage{pifont}
+\usepackage{longtable}
+\usepackage{multirow}
 
 \input{"./TeX_files/part_of_preamble_diagrams.tex"}
 \usepackage[pro]{fontawesome5}
@@ -90,7 +92,9 @@ outer = 25mm
 
 \newcommand{\dsa}[1]{\ds #1\ds}
 
-
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 %\newcommand{\beginproof}{{\noindent\textbf{Proof.}\\}}
 %\newcommand{\endproof}{{$_\square$}}

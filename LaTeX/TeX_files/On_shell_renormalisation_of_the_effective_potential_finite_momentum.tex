@@ -1,23 +1,77 @@
 % mainfile: ../master_thesis_GW.tex
 \chapter{On shell renormalisation of the effective potential -- finite momentum approach}
 
-One of the main topic of this thesis is to show a coherent way to renormalise a conformal theory 
-without explicit mass term in the on-shell scheme. Along the way, we will also discuss 
-the case with explicit mass term, for comparison.\\
-
+%One of the main topic of this thesis is to show a coherent way to renormalise a conformal theory 
+%without explicit mass term in the on-shell scheme. Along the way, we will also discuss 
+%the case with explicit mass term, for comparison.
+One of the goals, was to renormalsed potential in the classical on shell scheme. 
+We will present this aprousch here. Following //cittation needed (Japończycy?)//.
+This approuch however, will have one big issue, described in \ref{finitemomentumissue}
 %\section{Finite momentum approach}\label{finite momentum}
+\section{Second derivative condition}
 To calculate on-shell renormalisation we need to calculate self energy. 
 However, it turns out, that simple calculation of self energy fails the test of 
 comparison between the zero-momentum limit of the self energy and the second derivative 
 of the effective potential. \\
-Namely, it schould be safisfied that:
+Namely, it should be safisfied that:
 \begin{equation}\label{second_derivativ_condition}
 \lim\limits_{p^2\to 0}\Sigma(p^2)=\frac{\partial^2V_{eff}}{\partial\varphi_1^2},
 \end{equation}
 \todo{napisać ile wychodzi}
 but it is not the case. \\
-
-However, from the \MSbar considerations, we know that $\Phi$ have non-zero VEV, let us 
+Let us show this. \\
+We have that:
+\begin{align}
+V_{eff} = 
+\end{align}
+So:
+\begin{align}
+\frac{\partial^2V_{eff}}{\partial\varphi_1^2} = 
+\end{align}
+On the other hand contribution to $\Sigma$ constitued by following diagrams: 
+\todo{diagrams}
+The values of these diagrams are as follows:
+\begin{align}
+&-i\frac{e^2}{M_V}\Big[M_V^2a(M_2)+(-p^2-M_V^2+M_2^2)a(M_V)-(p^2+M_2^2)^2b_0(p,0,M_2) 
+\notag\\ 
+&+(p^2+M_2^2-M_V^2)^2b_0(p,M_V,M_2)\Big]
+\end{align}
+\begin{align}
+-i3e^2a_b(M_V) \\
+-i12\cl\lambda a(M_1) \\
+-i4\cl\lambda a(M_2) 
+\end{align}
+So:
+\begin{align}
+\Sigma = &-\frac{e^2}{M_V}\Big[M_V^2a(M_2)+(-p^2-M_V^2+M_2^2)a(M_V)-(p^2+M_2^2)^2b_0(p,0,M_2) 
+\notag\\ 
+&+(p^2+M_2^2-M_V^2)^2b_0(p,M_V,M_2)\Big] \notag \\
+&-3e^2a_b(M_V) \notag\\
+&-12\cl\lambda a(M_1)\notag \\
+&-4\cl\lambda a(M_2) 
+\end{align}
+Where:
+\begin{align}
+a(M) = \\
+b_0(p,M_1,M_2) = \\
+a^b(M) = 
+\end{align}
+and
+\begin{align}
+b_0(0,M_1,M_2) = 
+\end{align}
+Then, writing more explicitly we have that:
+\begin{align}
+abcd
+\end{align}
+So, we see, that indeed:
+\begin{equation}
+\lim\limits_{p^2\to 0}\Sigma(p^2) \neq \frac{\partial^2V_{eff}}{\partial\varphi_1^2}.
+\end{equation}
+\section{Introducing explicit VEV}
+There is a solution to this: \\
+%However, 
+From the \MSbar considerations, we know that $\Phi$ have non-zero VEV, let us 
 call it $v$. 
 Let us rotate $\Phi$ in such a way, that $\langle\varphi_1\rangle=v$ and $\langle\varphi_2\rangle 
 = 0$, where now $v$ is real. \\
@@ -32,10 +86,81 @@ $\varphi_2$ which have both zero VEV, now VEV is explicitly in the Lagrangian:
 
 This breaks the symmetry, but now there are more interaction terms in the Lagrangian and this leads 
 to different self energy, now consistent with the second derivative of the effective potential, 
-as will be shown in ref{}. \\ 
-
+as will be shown in \ref{sdcworks}.
+\section{Contributions to \texorpdfstring{$\Sigma$}{Sigma} and \texorpdfstring{$T$}{T}}
+Contributions to $\Sigma$ and $T$ constitutes now of the following diagrams:
+\todo{diagrams}
+The values of diagrams are as follows: \\
+Contributing to $\Sigma$ are:
+\begin{align}
+&-i\frac{e^2}{M_V}\Big[M_V^2a(M_2)+(-p^2-M_V^2+M_2^2)a(M_V)-(p^2+M_2^2)^2b_0(p,0,M_2) 
+\notag\\ 
+&+(p^2+M_2^2-M_V^2)^2b_0(p,M_V,M_2)\Big]
+\end{align}
+\begin{align}
+&-i\frac{e^4v^2}{2M_V^4}\Big[2M_V^2a(M_V)+p^4b_0(p,0,0)-2(p^2-M_V^2)^2b_0(p,M_V,0)\notag \\
+&+16M_V^4b_0^b(p,M_V,M_V)+(p^4-4p^2M_V^2-4M_V^4)b_0(p,M_V,M_V)\Big].
+\end{align}
+\begin{align}
+-i3e^2a_b(M_V) =\\
+-i12\cl\lambda a(M_1) =\\
+-i4\cl\lambda a(M_2) =\\
+-i288\cl^2\lambda^2v^2b_0(p,M_1,M_1) =\\
+-i32\cl^2\lambda^2 v^2b_0(p,M_2,M_2) =\\
+\end{align}
+Contributing to $T$ are:
+\begin{align}
+-i3e^2va^b(M_V) =\\
+-i12\cl\lambda va(M_1) =\\
+-i4\cl\lambda va(M_2) =\\
+-i4\cl\lambda v^3 =.
+\end{align}
+Where
+\begin{align}
+a(M) = \\
+b_0(p,M_1,M_2) = \\
+a^b(M) = \\
+b_0^b(p,M_1,M_2) = .
+\end{align}
+\section{Second derivative condition -- explicit VEV}\label{sdcworks}
+Now, we have that:
+\begin{align}
+\Sigma = &-\frac{e^2}{M_V}\Big[M_V^2a(M_2)+(-p^2-M_V^2+M_2^2)a(M_V)-(p^2+M_2^2)^2b_0(p,0,M_2) 
+\notag\\ 
+&+(p^2+M_2^2-M_V^2)^2b_0(p,M_V,M_2)\Big] \notag \\
+&-\frac{e^4v^2}{2M_V^4}\Big[2M_V^2a(M_V)+p^4b_0(p,0,0)-2(p^2-M_V^2)^2b_0(p,M_V,0)\notag \\
+&+16M_V^4b_0^b(p,M_V,M_V)+(p^4-4p^2M_V^2-4M_V^4)b_0(p,M_V,M_V)\Big] \notag \\
+&-3e^2a_b(M_V) \notag\\
+&-12\cl\lambda a(M_1)\notag \\
+&-4\cl\lambda a(M_2)\notag \\
+&-288\cl^2\lambda^2v^2b_0(p,M_1,M_1)\notag \\
+&-32\cl^2\lambda^2 v^2b_0(p,M_2,M_2),
+\end{align}
+where
+\begin{align}
+a(M) = \\
+b_0(p,M_1,M_2) = \\
+a^b(M) = \\
+b_0^b(p,M_1,M_2) = 
+\end{align}
+and
+\begin{align}
+b_0(0,M_1,M_2) = \\
+b_0^b(0,M_1,M_2) = 
+\end{align}
+So, we have that:
+\begin{align}
+\Sigma = 
+\end{align}
+So indeed, we have now, that:
+\begin{equation}\label{second_derivativ_condition}
+\lim\limits_{p^2\to 0}\Sigma(p^2)=\frac{\partial^2V_{eff}}{\partial\varphi_1^2},
+\end{equation}
+\section{Counterterms}
 Following \cite{Coleman1973} we put the mass counterterm even though initialy the mass term 
-was not present in the Lagrangian. It will turn out to be crutial in ref{}. \\ 
+was not present in the Lagrangian. We do so, because our theory has no a priory symmetry 
+that would guarantee disapering mass term in renormalised Lagrangian. It will turn out to be 
+crutial in our . \\ 
 The Lagrangian with $\dZ$, $\dl$ and $\dm$ counterterms looks like this:
 
 \begin{align}
@@ -51,6 +176,9 @@ The Lagrangian with $\dZ$, $\dl$ and $\dm$ counterterms looks like this:
 %\dl=\dZl\lambda
 %\end{equation}
 
+
+
+
 Separating the terms with the first power of renormalisation constants and second power of 
 $\varphi_1$, we obtain correction to the self energy equal to:
 \begin{equation}
@@ -65,9 +193,7 @@ $\varphi_1$, we obtain correction to the tadpole equal to:
 \begin{equation}
 \dT=-4\cl v^3(2\lambda\dZphi+\dl)-2\cm\dm v.
 \end{equation}
-
-
-
+\section{Renormalization conditions}
 First approach is to impose renormalisation conditions resembling classical on-shell.
 Here, $\Sigma'$ stands for $\frac{\textrm{d}\Sigma}{\textrm{d}p^2}$ and, if not 
 stated otherwise, 
@@ -94,60 +220,25 @@ We define $M_P^2$ as the second derivative of the tree potential evaluated at VE
 M_P^2 = \frac{\partial^2}{\partial \varphi_1^2}\cl\lambda\varphi_1^4\Big|_{v} = 12\cl\lambda v^2
 \end{equation}
 and we impose, that it does not change after one loop contributions. \\
-
-Contributions to $\Sigma$ and $T$ constitutes of the following diagrams:
-\todo{diagrams}
-
-The values of diagrams are as follows:
-Contributing to $\Sigma$:
-\begin{align}
-&-i\frac{e^2}{M_V}\Big[M_V^2a(M_2)+(-p^2-M_V^2+M_2^2)a(M_V)-(p^2+M_2^2)^2b_0(p,0,M_2)+ 
-\notag\\ 
-&(p^2+M_2^2-M_V^2)^2b_0(p,M_V,M_2)\Big]
-\end{align}
-\begin{align}
-&-i\frac{e^4v^2}{2M_V^4}\Big[2M_V^2a(M_V)+p^4b_0(p,0,0)-2(p^2-M_V^2)^2b_0(p,M_V,0)+\notag \\
-&16M_V^4b_0^b(p,M_V,M_V)+(p^4-4p^2M_V^2-4M_V^4)b_0(p,M_V,M_V)\Big]
-\end{align}
-\begin{align}
--i3e^2a_b(M_V) \\
--i12\cl\lambda a(M_1) \\
--i4\cl\lambda a(M_2) \\
--i288\cl^2\lambda^2v^2b_0(p,M_1,M_1) \\
--i32\cl^2\lambda^2 v^2b_0(p,M_2,M_2) \\
-\end{align}
-Contributing to $T$:
-\begin{align}
--i3e^2va^b(M_V) \\
--i12\cl\lambda va(M_1) \\
--i4\cl\lambda va(M_2) \\
--i4\cl\lambda v^3
-\end{align}
-Where
-\begin{align}
-a(M) = \\
-b_0(p,M_1,M_2) = \\
-a^b(M) = \\
-b_0^b(p,M_1,M_2) = 
-\end{align}
-
+\section{Partition by order in \texorpdfstring{$e$}{e}}
 Here, we will be interested in only contributions up to order $e^4$. From our \MSbar considerations 
 we can see, that $\lambda$ should be of order $e^4$, that $M_V^2$ should be of order $e^2$ and 
 that $M_1$, $M_2$ should be of order $e^4$. 
 As that we are 
 intersted only in following parts of contributions to $\Sigma$ and $T$:
 \begin{align}
-\Sigma_{e^0} = &-\frac{e^2}{M_V^2}\Big[-p^4b_0(p,0,M_2)+p^4b_0(p,M_V,M_2)\Big]-\notag \\
-&\frac{e^4v^2}{M_V^4}\Big[p^4b_0(p,0,0)-2p^4b_0(p,M_V,0)+p^4b_0(p,M_V,M_V)\Big] \\
-\Sigma_{e^2} = &-\frac{e^2}{M_V^2}\Big[-p^2a(M_V)-2p^2M_V^2b_0(p,M_V,M_2)\Big]-\notag \\
-&\frac{e^4v^2}{2M_V^4}\Big[4p^2M_V^2b_0(p,M_V,0)-4p^2M_V^2b_0(p,M_V,M_V)\Big] \\
-\Sigma_{e^4} = &-\frac{e^2}{M_V^2}a(M_V)\Big[-M_V^2a(M_V)+M_V^4b_0(p,M_V,M_2)\Big]-\notag \\
-&\frac{e^4v^2}{2M_V^4}\Big[2M_V^2a(M_V)-2M_V^4b_0(p,M_V,0)+\notag \\
-&16M_V^4b_0^b(p,M_V,M_V)-4M_V^4b_0(p,M_V,M_V)\Big]-\notag\\
-&3e^2a^b(M_V)-\notag\\
-&\frac{e^2}{M_V^2}\Big[-2p^2M_2^2b_0(p,0,M_2)+2p^2M_2^2b_0(p,M_V,M_2)\Big] \\
+\Sigma_{e^0} = &-\frac{e^2}{M_V^2}\Big[-p^4b_0(p,0,M_2)+p^4b_0(p,M_V,M_2)\Big]\notag \\
+&-\frac{e^4v^2}{M_V^4}\Big[p^4b_0(p,0,0)-2p^4b_0(p,M_V,0)+p^4b_0(p,M_V,M_V)\Big] \\
+\Sigma_{e^2} = &-\frac{e^2}{M_V^2}\Big[-p^2a(M_V)-2p^2M_V^2b_0(p,M_V,M_2)\Big]\notag \\
+&-\frac{e^4v^2}{2M_V^4}\Big[4p^2M_V^2b_0(p,M_V,0)-4p^2M_V^2b_0(p,M_V,M_V)\Big] \\
+\Sigma_{e^4} = &-\frac{e^2}{M_V^2}a(M_V)\Big[-M_V^2a(M_V)+M_V^4b_0(p,M_V,M_2)\Big]\notag \\
+&-\frac{e^4v^2}{2M_V^4}\Big[2M_V^2a(M_V)-2M_V^4b_0(p,M_V,0)\notag \\
+&+16M_V^4b_0^b(p,M_V,M_V)-4M_V^4b_0(p,M_V,M_V)\Big]\notag\\
+&-3e^2a^b(M_V)\notag\\
+&-\frac{e^2}{M_V^2}\Big[-2p^2M_2^2b_0(p,0,M_2)+2p^2M_2^2b_0(p,M_V,M_2)\Big] \\
 T_{e^4} = & -3e^2va^b(M_V)-4\cl\lambda v^3.
 \end{align}
+\section{Finitness of the renormalized potential}
 The divergent part of $T$, $\Sigma$ and $\Sigma'$ are:
 \begin{align}
 \textrm{div}T = -\frac{3e^4v^4}{16\pi^2}\Big(-\frac{2}{\epsilon}\Big)\\
@@ -155,7 +246,19 @@ The divergent part of $T$, $\Sigma$ and $\Sigma'$ are:
 \textrm{div}\Sigma' = \frac{3e^2}{16\pi^2}\Big(-\frac{2}{\epsilon}\Big).
 \end{align}
 After subsituing to $\dl$, $\dm$, $\dZ$ and then to $V_R$ we see that $\textrm{div}V_R = 0$, 
-thus renormalisation procedure succeeds in canceling divergences.
+thus renormalisation procedure succeeds in canceling divergences. \\
+\section{Resulting effective potential}\label{finitemomentumissue}
+Although full potential is to long to explicitly write in symbolic form, we 
+will present it with some of the numerical values substituted. 
+What we should note, is that in this case renormalized potential have both $\varphi_1^2$ term 
+and $\varphi_1^4$ term, unlike in \cite{Coleman1973}. \\
+\todo{diagramy, równania, takie, takie}
+\section{Downsides of this approuch}
+The big downside of this method is that we incorporated the condition of not changing VEV between 
+tree and one-loop level to our renormalization conditions. This results in inability to 
+derive relationships at one-loop level between $M_P^2$, $v$ and $e$ from the condition that 
+$v$ is minimum of the first derivative of renormalised effective potential. Using this 
+condition results in tautology, as we already used this condition for renormalisation. 
 %\subsection{Explicit mass term case}
 %For the comparison, we will present the same calculation, performed on the analogous theory with 
 %explicit mass term. Similarly as in the \ref{no_mass_term} we need to shift fields for 
