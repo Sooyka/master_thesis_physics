@@ -313,7 +313,7 @@ The renormalized potential is then:
 \begin{align}
 \VR = &\cl\lambda\varphi_1^4 + \notag \\ 
 &\frac{3e^4}{64\pi^2}\Big(-\frac{5}{6}+\log\frac{e^2\varphi_1^2}{\mu^2}\Big)\varphi_1^4 \notag\\
-&+\frac{3e^4v^2}{32\pi^2}\Big(-1-3\log\frac{e^2v^2}{\mu^2}\Big)\varphi_1^2.
+&+\frac{9e^4v^2}{32\pi^2}\Big(-\frac{1}{3}-\log\frac{e^2v^2}{\mu^2}\Big)\varphi_1^2.
 \end{align}
 From the tree level potential we have the relation $\lambda = \frac{M_P^2}{12\cl v^2}$. 
 Written in these terms we have:
@@ -345,7 +345,7 @@ V_R = \frac{M_P^2}{16v^2}\Big(\frac{1}{2}+\log\frac{\varphi_1^2}{v^2}\Big)\varph
 \frac{M_P^2}{8}\varphi_1^2.
 \end{align}
 Potential can be written also in terms of $v$ and $e$:
-\begin{equation}
+\begin{equation}\label{resulthalfhalf}
 V_R=\frac{3e^4}{64\pi^2}\Big(\frac{1}{2}+\log\frac{\varphi_1^2}{v^2}\Big)\varphi_1^4- 
 \frac{3e^2v^2}{32\pi^2}\varphi_1^2.
 \end{equation}
@@ -445,5 +445,37 @@ We can now calculate following quantities:
 \frac{M_P^2}{m(V)^2} = \frac{\frac{3e^4v^2}{8\pi^2}}{e^2v^2} = \frac{3e^2}{8\pi^2}.
 \end{align}
 
+\section{Passing between schemes}
+Writing \ref{asCWresult} is new field $\varphi'$, such that $\varphi_1' + v \coloneqq \varphi'$
+we have:
+\begin{align}
+\frac{3e^4}{64\pi^2}\Big(-\frac{1}{2}+\log\big(1+\frac{\varphi_1'^2}{v^2}+\frac{2\varphi_1'}{v}
+\big)\Big)
+(\varphi_1'^4 + 4v\varphi_1'^3+6v^2\varphi_1'^2+4v^3\varphi_1'+v^4).
+\end{align}
 
+For \ref{resulthalfhalf} wirtten in terms of $\varphi_1'$ we have:
+\begin{align}
+&\frac{3e^4}{64\pi^2}\Big(\frac{1}{2}+\log\big(1+\frac{\varphi_1'^2}{v^2}+\frac{2\varphi_1'}{v}\big)
+\Big)(\varphi_1'^4 + 4v\varphi_1'^3+6v^2\varphi_1'^2+4v^3\varphi_1'+v^4) \notag\\
+&-\frac{3e^2v^2}{32\pi^2}(\varphi_1'^2+2v\varphi_1'+v^2) \\
+= &\frac{3e^4}{64\pi^2}\Big(\frac{1}{2}+\log\big(1+\frac{\varphi_1'^2}{v^2}+
+\frac{2\varphi_1'}{v}\big)
+\Big)(\varphi_1'^4 + 4v\varphi_1'^3) \\
+&+\Big(\frac{9e^4v^2}{32\pi^2}\Big(\frac{1}{2}+\log\big(1+\frac{\varphi_1'^2}{v^2}+
+\frac{2\varphi_1'}{v}\big)\Big)-\frac{3e^2v^2}{32\pi^2}\Big)\varphi_1'^2 \notag\\
+&+\Big(\frac{3e^4v^3}{16\pi^2}\Big(\frac{1}{2}+\log\big(1+\frac{\varphi_1'^2}{v^2}+
+\frac{2\varphi_1'}{v}\big)\Big)-\frac{3e^2v^3}{16\pi^2}\Big)\varphi_1' \notag\\
+&+\frac{3e^4v^4}{64\pi^2}\Big(\frac{1}{2}+\log\big(1+\frac{\varphi_1'^2}{v^2}+
+\frac{2\varphi_1'}{v}\big)\Big)-\frac{3e^2v^4}{32\pi^2} \\
+= &\frac{3e^4}{64\pi^2}\Big(\frac{1}{2}+\log\big(1+\frac{\varphi_1'^2}{v^2}+
+\frac{2\varphi_1'}{v}\big)
+\Big)(\varphi_1'^4 + 4v\varphi_1'^3) \\
+&+\frac{9e^4v^2}{32\pi^2}\Big(\frac{1}{6}+\log\big(1+\frac{\varphi_1'^2}{v^2}+
+\frac{2\varphi_1'}{v}\big)\Big)\varphi_1'^2 \notag\\
+&+\frac{3e^4v^3}{16\pi^2}\Big(-\frac{1}{2}+\log\big(1+\frac{\varphi_1'^2}{v^2}+
+\frac{2\varphi_1'}{v}\big)\Big)\varphi_1' \notag\\
+&+\frac{3e^4v^4}{64\pi^2}\Big(-\frac{3}{2}+\log\big(1+\frac{\varphi_1'^2}{v^2}+
+\frac{2\varphi_1'}{v}\big)\Big)
+\end{align}
 

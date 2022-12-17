@@ -1,5 +1,7 @@
 % mainfile: ../master_thesis_GW.tex
-\chapter{How did Coleman Weinberg do it?}\label{CWchapter}
+\chapter{How did Coleman and Weinberg do it?}\label{CWchapter}
+Here, we will present a summary of the parts of \citeColWein that are of interest to us. \\
+
 \section{\texorpdfstring{$\lambda\varphi^4$}{Lambda phi to the fourth} theory}
 Coleman and Weinberg in \cite{Coleman1973} start with "$\lambda\varphi^4$" model, namely, with 
 Lagransian:
@@ -8,7 +10,7 @@ Lagransian:
 A(\partial_\mu\varphi)^2-\frac{1}{2}B\varphi^2-\frac{1}{4!}C\varphi^4,
 \end{align}
 where $A$, $B$, $C$ are renormalisation constants. \\
-They then proceeed to calculations of the renormalised effective potential in this theory. \\
+Then there are calculations of the renormalised effective potential in this theory. \\
 Tree level potential is
 \begin{align}
 V=\frac{\lambda}{4!}\varphi_c^4,
@@ -35,26 +37,28 @@ V=\frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2+\frac{1}{4!}C\varphi_c^4
 \left(\ln\frac{\lambda\varphi_c^2}{2\Lambda^2}-\frac{1}{2}\right).
 \end{align}
 \subsection{Renormalisation}
-Then, they proceed, to renormalise the potential. First renormalisation condition is for the 
+Then, the potenrtial is renormalised. First renormalisation condition is for the 
 renormalised mass to vanish (eq. (3.5) in \cite{Coleman1973}). \\
-They write is as:
-\begin{align}
-\frac{d^2V}{d\varphi_c^2}\Big|_0=0,
+It is written as:
+\begin{align}\label{howCW_IIat0}
+\frac{d^2V}{d\varphi_c^2}\Big|_0=0.
 \end{align}
-which can be suspitious, as, according to discusion in \cite{Coleman1973} rigth after equation 
-(2.12b), we have that mass is equal to $\frac{d^2V}{d\varphi_c^2}\Big|_{\langle\varphi\rangle}$, 
-where $\langle\varphi\rangle$ is VEV of $\varphi$. \\
-A priori, it is not guaranteed in our theory, that symmetry is unbroken and 
-$\langle\varphi\rangle = 0$. However, it is also not explicitly broken yet, so we left it for now. 
-\\
-This condition give us, that 
+This conditin is interesting, as it seems to only postulate  ... \todo{rozwinąć}
+%which can be suspitious, as, according to discusion in \cite{Coleman1973} rigth after equation 
+%(2.12b), we have that mass is equal to $\frac{d^2V}{d\varphi_c^2}\Big|_{\langle\varphi\rangle}$, 
+%where $\langle\varphi\rangle$ is VEV of $\varphi$. \\
+%A priori, it is not guaranteed in our theory, that symmetry is unbroken and 
+%$\langle\varphi\rangle = 0$. However, it is also not explicitly broken yet, so we left it for now. 
+%\\
+The second derivative of the potential evaluated at zero is equal to:
+\begin{align}
+\frac{d^2V}{d\varphi_c^2}\Big|_0 = B+\frac{\lambda\Lambda^2}{32\pi^2},
+\end{align}
+so condition \ref{howCW_IIat0} gives us, that 
 \begin{align}
 B = -\frac{\lambda\Lambda^2}{32\pi^2},
 \end{align}
-as second derivative of the potential evaluated at zero is equal to:
-\begin{align}
-\frac{d^2V}{d\varphi_c^2}\Big|_0 = B+\frac{\lambda\Lambda^2}{32\pi^2}.
-\end{align}
+
 Note that, if the derivative would be evaluated at some non zero $\lVEV$, this relation will 
 vastly change. \\
 After determining $B$, the following criterium for determining $C$ is presented:
