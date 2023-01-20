@@ -61,18 +61,25 @@ B = -\frac{\lambda\Lambda^2}{32\pi^2},
 
 Note that, if the derivative would be evaluated at some non zero $\lVEV$, this relation will 
 vastly change. \\
-After determining $B$, the following criterium for determining $C$ is presented:
+We would like to have an analogous condition for the fourth derivative, but
+ the fourth derivative does not exist at 0, because of the logarithmic infrared singularity.
+To resolve this problem, we can intoduce a prameter $M$, with the dimention of the mass and take 
+the derivative at it.
+%After determining $B$, the following criterium for determining $C$ is presented:
+The condition takes the form:
 \begin{align}
 \frac{d^4V}{d\varphi_c^4}\Big|_M=\lambda.
 \end{align}
-We for now leave (although interesting) discusion of introducing the parameter $M$. \\
-\todo{M parameter }
+%We for now leave (although interesting) discusion of introducing the parameter $M$. \\
+%\todo{M parameter }
+The parameter $M$ taken is arbitrary and will cancel out in the final potential, as we will 
+soon see. \\
 The resulting $C$ is:
 \begin{align}
 C=-\frac{3\lambda^2}{32\pi^2}\left(\ln\frac{\lambda M^2}{2\Lambda^2}+\frac{11}{3}\right).
 \end{align}
-Note, that resulting $C$ is completly independent of the value of $B$ determined 
-earlier\label{CBreason}, as $B$ is not present in $\frac{d^4V}{d\varphi_c^4}\Big|_M$. \\
+%Note, that resulting $C$ is completly independent of the value of $B$ determined 
+%earlier\label{CBreason}, as $B$ is not present in $\frac{d^4V}{d\varphi_c^4}\Big|_M$. \\
 The resulting potential is:
 \begin{align}
 V=\frac{\lambda}{4!}\varphi_c^4+\frac{\lambda^2\varphi_c^4}{256\pi^2}\left(\ln
@@ -147,7 +154,7 @@ V=&\frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2+\frac{1}{4!}C\varphi_c^
 \subsection{Renormalisation}\label{CW_renormalisation_scalar_el}
 %Now, it starts the fun part. \\
 The first imposed renormalisation condition in the previous ($\lambda\varphi^4$) case was:
-\begin{align}
+\begin{align}\label{phitoforth condition}
 \frac{d^2V}{d\varphi_c^2}\Big|_0=0,
 \end{align}
 where, it was stated, is equivalent, to renormalised mass being zero. \\
@@ -164,17 +171,30 @@ which can be defined as "$\frac{d^2V}{d\varphi_c^2}\Big|_0$" itself. \\
 %Here it is not explicitly stated, whether this condition is being used in the case of scalar 
 %electrodynamics and we shall investigate that matter. \\
 %, whether this is the case, and whether this was used here. \\
-The same renormalisation condition was used as the first one in this case. 
-The second derivative is:
-
-
-Let us start with the second renormalisation condition, namely:
+The same renormalisation condition was used as the first one in this case. \\
+The second derivative evaluated at zero is:
+\begin{align}
+\frac{d^2V}{d\varphi_c^2}\Big|_0 = 
+\frac{1}{2}B\varphi_c^2 + 
+\frac{\lambda\Lambda^2}{64\pi^2}\varphi_c^2+ 
+\frac{\lambda\Lambda^2}{3\cdot 64\pi^2}\varphi_c^2+
+\frac{3e^2\Lambda^2}{32\pi^2}\varphi_c^2. 
+\end{align}
+Thus:
+\begin{align}\label{CW_B_dm}
+B = -2\Big(
+\frac{\lambda\Lambda^2}{64\pi^2}+ 
+\frac{\lambda\Lambda^2}{3\cdot 64\pi^2}+
+\frac{3e^2\Lambda^2}{32\pi^2}\Big). 
+\end{align}
+The second renormalisation condition is:
+%Let us start with the second renormalisation condition, namely:
 \begin{align}
 \frac{d^4V}{d\varphi_c^4}\Big|_M=\lambda,
 \end{align}
-and reverse engeneer what happened in \cite{Coleman1973}. \\
-We can do this, because of the reason stated in \ref{CBreason} as $B$ does not appear in 
-$\frac{d^4V}{d\varphi_c^4}\Big|_M$. \\
+%and reverse engeneer what happened in \cite{Coleman1973}. \\
+%We can do this, because of the reason stated in \ref{CBreason} as $B$ does not appear in 
+%$\frac{d^4V}{d\varphi_c^4}\Big|_M$. \\
 We have that:
 \begin{align}
 \frac{d^4V}{d\varphi_c^4}\Big|_M = &\lambda + C \notag \\
@@ -190,9 +210,12 @@ C = -\Big(
 &+\frac{(75-18\alpha)e^4}{16\pi^2}+\frac{9e^4}{8\pi^2}\ln\frac{e^2M^2}{\Lambda^2}
 \Big).
 \end{align}
-Subsituing this result to the potential result in:
+Subsituing these results to the potential result in:
 \begin{align}
-V=&\frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2 \notag \\
+V=&\frac{\lambda}{4!}\varphi_c^4-\Big(
+\frac{\lambda\Lambda^2}{64\pi^2}+ 
+\frac{\lambda\Lambda^2}{3\cdot 64\pi^2}+
+\frac{3e^2\Lambda^2}{32\pi^2}\Big)\varphi_c^2 \notag \\
 &-\frac{1}{4!}\Big(
 \frac{11\lambda^2}{32\pi^2}+\frac{3\lambda^2}{32\pi^2}\ln\frac{\lambda M^2}{2\Lambda^2}\notag \\
 &+\frac{11\lambda^2}{288\pi^2}+\frac{\lambda^2}{96\pi^2}\ln\frac{\lambda M^2}{6\Lambda^2}\notag \\
@@ -205,49 +228,46 @@ V=&\frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2 \notag \\
 &+\frac{3e^2\Lambda^2}{32\pi^2}\varphi_c^2+\frac{3e^4\varphi_c^4}{64\pi^2}
 \left(\ln\frac{e^2\varphi_c^2}{\Lambda^2}-\frac{1}{2}\right),
 \end{align}
-and after canceling:
+and after canceling the renormalised potential is:
 \begin{align}
-V = &\frac{\lambda}{4!}\varphi_c^4+\frac{1}{2}B\varphi_c^2  \notag \\
-&+\frac{\lambda\Lambda^2}{64\pi^2}\varphi_c^2+
-\frac{\lambda\Lambda^2}{3\cdot 64\pi^2}\varphi_c^2+
-\frac{3e^2\Lambda^2}{32\pi^2}\varphi_c^2  \notag \\
-&+\left(\frac{5\lambda^2}{1152\pi^2}+\frac{3e^4}{64\pi^2}\right)\varphi_c^4
+V = &\frac{\lambda}{4!}\varphi_c^4
++\left(\frac{5\lambda^2}{1152\pi^2}+\frac{3e^4}{64\pi^2}\right)\varphi_c^4
 \left(\ln\frac{\varphi_c^2}{M^2}-\frac{25}{6}\right).
 \end{align}
-%Let us notice, that the constant $\alpha$ disappeared entearly from the expression as it was 
-%canceld out. \\
-Let us notice, that above potential differs from \cite{Coleman1973}(4.5) only by the terms:
-\begin{align}
-\frac{1}{2}B\varphi_c^2 + 
-\frac{\lambda\Lambda^2}{64\pi^2}\varphi_c^2+ 
-\frac{\lambda\Lambda^2}{3\cdot 64\pi^2}\varphi_c^2+
-\frac{3e^2\Lambda^2}{32\pi^2}\varphi_c^2. 
-\end{align}
-As such, in the renormalistion scheme used in \cite{Coleman1973}, we must have that:
-\begin{align}
-\frac{1}{2}B\varphi_c^2 + 
-\frac{\lambda\Lambda^2}{64\pi^2}\varphi_c^2+ 
-\frac{\lambda\Lambda^2}{3\cdot 64\pi^2}\varphi_c^2+
-\frac{3e^2\Lambda^2}{32\pi^2}\varphi_c^2 = 0, 
-\end{align}
-thus:
-\begin{align}\label{CW_B_dm}
-B = -2\Big(
-\frac{\lambda\Lambda^2}{64\pi^2}+ 
-\frac{\lambda\Lambda^2}{3\cdot 64\pi^2}+
-\frac{3e^2\Lambda^2}{32\pi^2}\Big). 
-\end{align}
-Then, the renormalised potential is indeed:
-\begin{align}
-V = \frac{\lambda}{4!}\varphi_c^4+
-\left(\frac{5\lambda^2}{1152\pi^2}+\frac{3e^4}{64\pi^2}\right)\varphi_c^4
-\left(\ln\frac{\varphi_c^2}{M^2}-\frac{25}{6}\right)
-\end{align}
-as in \cite{Coleman1973}(4.5), but what is important is, then indeed
-\begin{align}
-\frac{d^2V}{d\varphi_c^2}\Big|_0=0,
-\end{align}
-so this was preceisly the condition used to renormalised this potential. \\
+%%Let us notice, that the constant $\alpha$ disappeared entearly from the expression as it was 
+%%canceld out. \\
+%Let us notice, that above potential differs from \cite{Coleman1973}(4.5) only by the terms:
+%\begin{align}
+%\frac{1}{2}B\varphi_c^2 + 
+%\frac{\lambda\Lambda^2}{64\pi^2}\varphi_c^2+ 
+%\frac{\lambda\Lambda^2}{3\cdot 64\pi^2}\varphi_c^2+
+%\frac{3e^2\Lambda^2}{32\pi^2}\varphi_c^2. 
+%\end{align}
+%As such, in the renormalistion scheme used in \cite{Coleman1973}, we must have that:
+%\begin{align}
+%\frac{1}{2}B\varphi_c^2 + 
+%\frac{\lambda\Lambda^2}{64\pi^2}\varphi_c^2+ 
+%\frac{\lambda\Lambda^2}{3\cdot 64\pi^2}\varphi_c^2+
+%\frac{3e^2\Lambda^2}{32\pi^2}\varphi_c^2 = 0, 
+%\end{align}
+%thus:
+%\begin{align}\label{CW_B_dm}
+%B = -2\Big(
+%\frac{\lambda\Lambda^2}{64\pi^2}+ 
+%\frac{\lambda\Lambda^2}{3\cdot 64\pi^2}+
+%\frac{3e^2\Lambda^2}{32\pi^2}\Big). 
+%\end{align}
+%Then, the renormalised potential is indeed:
+%\begin{align}
+%V = \frac{\lambda}{4!}\varphi_c^4+
+%\left(\frac{5\lambda^2}{1152\pi^2}+\frac{3e^4}{64\pi^2}\right)\varphi_c^4
+%\left(\ln\frac{\varphi_c^2}{M^2}-\frac{25}{6}\right)
+%\end{align}
+%as in \cite{Coleman1973}(4.5), but what is important is, then indeed
+%\begin{align}
+%\frac{d^2V}{d\varphi_c^2}\Big|_0=0,
+%\end{align}
+%so this was preceisly the condition used to renormalised this potential. \\
 %Now this is the mystery: \\
 %This condition, in the light of this theory, should not mean the disapperance of the renormalised 
 %mass, as $\lVEV \neq 0$ in this theory, and the mass is $\frac{d^2V}{d\varphi_c^2}\Big|_\lVEV$. 
@@ -255,9 +275,24 @@ so this was preceisly the condition used to renormalised this potential. \\
 %From the computational point of view, it certainly results in the potential being of order $4$ 
 %in the field, but physical one? \\
 %In \ref{onshellphi4} we will investigate the on-shell approuch of this method.
-This is precesuily the condition, that guarantees the $\varphi^4$ form of the potential.
-\todo{Napisać o stosunku mas}
+Let us note, that 
+\ref{phitoforth condition}
+is precesuily the condition, that guarantees the $\varphi^4$ form of the potential.
+%\todo{Napisać o stosunku mas}
 \label{CWe4potential}
+\subsection{The mass ratio}
+After shifting the field, the mass of scalar is given by:
+\begin{equation}
+m^2(S) = \frac{d^2V}{d\varphi_c^2}\Big|_{\langle\varphi\rangle} = \frac{3e^4}{8\pi^2}\langle\varphi\rangle^2.
+\end{equation}
+The mass of the vector is:
+\begin{equation}
+m^2(V) = e^2\frac{d^2V}{d\varphi_c^2}\Big|_0.
+\end{equation}
+From this we can obtain the mass ratio:
+\begin{equation}
+\frac{m^2(S)}{m^2(V)} = \frac{3}{2\pi}\frac{e^2}{4\pi}.
+\end{equation}
 
 
 
