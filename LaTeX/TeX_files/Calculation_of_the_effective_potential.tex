@@ -39,12 +39,22 @@ We can, however Wick rotate them to the Euklidean space and perform summation to
 logarithms
 \end{align}
 Now, integrals have only singularity at $\varphi_1 = 0$. \\
-There are now several ways to perform the integrals. We will present here briefly two of them:
-dimentional regularisation (DR) and cut-off. \\
+There are now several ways to perform the integrals. We will present here briefly two of them: 
+cut-off and
+dimentional regularisation (DR). \\
 For all of our further calculations, we will use DR, but cut-off will apear in \ref{CWchapter} 
 as a method used in \cite{Coleman1973}. \\
 \section{Cut-off}
+The idea of this method is to restrict the integration to $k^2 \leq \Lambda$, for a 
+parameter $\Lambda$. 
+%Then, with the end result calculated this way at hand, take the limit as $\Lambda \to \infty$.
 \section{Dimentional regularisation}
+The idea of this method is to observe, that the divergence is only in four dimentions 
+and if we formally change expresions to $4-2\epsilon$ dimentions. 
+It is performed by treating the integral as a linear functional depending on two parameters --
+function and dimention given by some specific formula. Then we can calculate it with our 
+function of interest and $D = 4-2\epsilon$ as arguments.  \\
+%$D = 4-2\epsilon$
 After passing to $D=4-2\epsilon$ dimensions and using dimensional regularisation we have:
 \begin{align}
 V_{1L}=\frac{1}{4}\frac{(\frac{1}{2}\lambda\varphi_1^2)^2}{(4\pi)^2}&\left(-\frac{2}{\epsilon}
@@ -54,3 +64,5 @@ V_{1L}=\frac{1}{4}\frac{(\frac{1}{2}\lambda\varphi_1^2)^2}{(4\pi)^2}&\left(-\fra
 +\frac{1}{4}\frac{3(e^2\varphi_1^2)^2}{(4\pi)^2}&\left(-\frac{2}{\epsilon}+\gamma_E
 -\frac{5}{6}+\log{\frac{e^2\varphi^2}{4\pi\mu^2}}\right)
 \end{align}
+\section{}
+The task that is still left, is to 
