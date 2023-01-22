@@ -3,7 +3,7 @@
 
 Tree level potential in our model is:
 \begin{equation}
-V_T = \frac{1}{4}\lambda(\varphi_1^2+\varphi_2^2)^2.
+V_T = \cl\lambda(\varphi_1^2+\varphi_2^2)^2.
 \end{equation}
 
 
@@ -209,12 +209,14 @@ where: \\
 	    \draw[scalar] (0.8, -1.1)--(1.1,-0.3);
 	    \node at (0.6,-1.3) {$\varphi_1$};
 	    \node at (0.1,-0.6) {$\varphi_1$};
-        \node at (4,0.3) {... $n$ pairs of $\varphi_1$ legs total};
+        \node at (2.7,0.5) {... $n$ pairs};
+        \node at (3.2,0.1) {of $\varphi_1$ legs total};
     \end{scope}
 \end{tikzpicture}
 
 \vspace*{-3cm}\begin{align}
-\hspace*{3cm}=i\int \frac{\textrm{d}^4k}{(2\pi)^4}\frac{1}{2n}\left(\frac{\lambda\frac{1}{2}\varphi_1^2}
+\hspace*{3cm}=i\int \frac{\textrm{d}^4k}{(2\pi)^4}\frac{1}{2n}\left(\frac{12\cl\lambda
+\varphi_1^2}
 {k^2+i\varepsilon}\right)^n 
 \end{align} \\[8pt]
 
@@ -239,13 +241,14 @@ where: \\
 	    \draw[scalar] (0.8, -1.1)--(1.1,-0.3);
 	    \node at (0.6,-1.3) {$\varphi_1$};
 	    \node at (0.1,-0.6) {$\varphi_1$};
-        \node at (4,0.3) {... $n$ pairs of $\varphi_1$ legs total};
+        \node at (2.7,0.5) {... $n$ pairs};
+        \node at (3.2,0.1) {of $\varphi_1$ legs total};
     \end{scope}
 \end{tikzpicture}
 
 \vspace*{-3cm}\begin{align}
-\hspace*{3cm}=i\int \frac{\textrm{d}^4k}{(2\pi)^4}\frac{1}{2n}&\left(\frac{1}{3}\frac{\lambda\frac{1}
-{2}\varphi_1^2}
+\hspace*{3cm}=i\int \frac{\textrm{d}^4k}{(2\pi)^4}\frac{1}{2n}&\left(
+\frac{1}{3}\frac{12\cl\lambda\varphi_1^2}
 {k^2+i\varepsilon}\right)^n 
 \end{align} \\[8pt]
 
@@ -270,12 +273,13 @@ where: \\
 	    \draw[scalar] (0.8, -1.1)--(1.1,-0.3);
 	    \node at (0.6,-1.3) {$\varphi_1$};
 	    \node at (0.1,-0.6) {$\varphi_1$};
-        \node at (4,0.3) {... $n$ pairs of $\varphi_1$ legs total};
+        \node at (2.7,0.5) {... $n$ pairs};
+        \node at (3.2,0.1) {of $\varphi_1$ legs total};
     \end{scope}
 \end{tikzpicture}
 
 \vspace*{-3cm}\begin{align}
-\hspace*{6cm}=i\int \frac{\textrm{d}^4k}{(2\pi)^4}\frac{1}{2n}&\left(\frac{2e^2\frac{1}{2}\varphi_1^2}
+\hspace*{5cm}=i\int \frac{\textrm{d}^4k}{(2\pi)^4}\frac{1}{2n}&\left(\frac{2e^2\frac{1}{2}\varphi_1^2}
 {k^2+i\varepsilon}\right)^n(g^\mu_{\ \,\mu} - 1).
 \end{align} \\[8pt]
 
@@ -283,11 +287,11 @@ Summing all the diagrams in series gives:
 
 
 \begin{align}
-i\int \frac{\textrm{d}^4k}{(2\pi)^4}\sum\limits_{n=1}^{\infty}
-\frac{1}{2n}&\left(\frac{\lambda\frac{1}{2}\varphi_1^2}
+V_{1L} = i\int \frac{\textrm{d}^4k}{(2\pi)^4}\sum\limits_{n=1}^{\infty}
+\frac{1}{2n}&\left(\frac{12\cl\lambda\varphi_1^2}
 {k^2+i\varepsilon}\right)^n + \\
 i\int \frac{\textrm{d}^4k}{(2\pi)^4}\sum\limits_{n=1}^{\infty}\frac{1}{2n}&
-\left(\frac{1}{3}\frac{\lambda\frac{1}{2}\varphi_1^2}
+\left(\frac{1}{3}\frac{12\cl\lambda\varphi_1^2}
 {k^2+i\varepsilon}\right)^n +\\
 i\int \frac{\textrm{d}^4k}{(2\pi)^4}\sum\limits_{n=1}^{\infty}\frac{1}{2n}&
 \left(\frac{2e^2\frac{1}{2}\varphi_1^2}
@@ -296,12 +300,12 @@ i\int \frac{\textrm{d}^4k}{(2\pi)^4}\sum\limits_{n=1}^{\infty}\frac{1}{2n}&
 
 These integrals seems to be hideously infrared divergent. 
 We can, however Wick rotate them to the Euklidean space and perform summation to get:
-\begin{align}
-\frac{1}{2} \int\frac{d^4k}{(2\pi)^4}\ln{\left(1+\frac{\lambda\varphi_1^2}{2k^2}
+\begin{align}\label{eff_before_reg}
+V_{1L}=&\frac{1}{2} \int\frac{d^4k}{(2\pi)^4}\ln{\left(1+\frac{12\cl\lambda\varphi_1^2}{k^2}
 \right)} +\\
-\frac{1}{2} \int\frac{d^4k}{(2\pi)^4}\ln{\left(1+\frac{\lambda\varphi_1^2}{6k^2}
+&\frac{1}{2} \int\frac{d^4k}{(2\pi)^4}\ln{\left(1+\frac{4\cl\lambda\varphi_1^2}{k^2}
 \right)} +\\ 
-\frac{3}{2} \int\frac{d^4k}{(2\pi)^4}\ln{\left(1+\frac{e^2\varphi_1^2}{k^2}\right)}
+&\frac{3}{2} \int\frac{d^4k}{(2\pi)^4}\ln{\left(1+\frac{e^2\varphi_1^2}{k^2}\right)}
 \end{align}
 Now, integrals have only singularity at $\varphi_1 = 0$. \\
 There are now several ways to perform these integrals. We will present here briefly two of them: 
@@ -312,8 +316,18 @@ but cut-off will apear in \ref{CWchapter}
 as a method used in \cite{Coleman1973}. \\
 \section{Cut-off}
 The idea of this method is to restrict the integration to $k^2 \leq \Lambda$, for a 
-parameter $\Lambda$. \todo{finish}
-%Then, with the end result calculated this way at hand, take the limit as $\Lambda \to \infty$.
+parameter $\Lambda$. \\
+Integrating \ref{eff_before_reg} up to $\Lambda$ gives:
+\begin{align}
+V_{1L}=
+&\frac{3\cl\lambda\Lambda^2}{8\pi^2}\varphi_c^2+\frac{9\cl\lambda^2\varphi_c^4}{4\pi^2}
+\left(\ln\frac{12\cl\lambda\varphi_c^2}{\Lambda^2}-\frac{1}{2}\right)  \notag \\
++&\frac{\cl\lambda\Lambda^2}{8\pi^2}\varphi_c^2+\frac{\cl\lambda^2\varphi_c^4}{4\pi^2}
+\left(\ln\frac{4\cl\lambda\varphi_c^2}{\Lambda^2}-\frac{1}{2}\right)  \notag \\
++&\frac{3e^2\Lambda^2}{32\pi^2}\varphi_c^2+\frac{3e^4\varphi_c^4}{64\pi^2}
+\left(\ln\frac{e^2\varphi_c^2}{\Lambda^2}-\frac{1}{2}\right).
+\end{align}
+
 \section{Dimentional regularisation}
 The idea of this method is to observe, that the divergence is only in four dimentions 
 and if we formally change expresions to $4-2\epsilon$ dimentions. 
@@ -323,30 +337,34 @@ function of interest and $D = 4-2\epsilon$ as arguments.  \\
 %$D = 4-2\epsilon$
 After passing to $D=4-2\epsilon$ dimensions the integrals take form: 
 \begin{align}
-V_{1L}=&\frac{\mu^\epsilon}{2} \int\frac{d^Dk}{(2\pi)^D}\ln{\left(1+\frac{\lambda\varphi_1^2}{2k^2}
+V_{1L}=&\frac{\mu^\epsilon}{2} \int\frac{d^Dk}{(2\pi)^D}\ln{\left(1+\frac{12\cl\lambda\varphi_1^2}{k^2}
 \right)}\\
-+&\frac{\mu^\epsilon}{2} \int\frac{d^Dk}{(2\pi)^D}\ln{\left(1+\frac{\lambda\varphi_1^2}{6k^2}
++&\frac{\mu^\epsilon}{2} \int\frac{d^Dk}{(2\pi)^D}\ln{\left(1+\frac{4\cl\lambda\varphi_1^2}{k^2}
 \right)} \\ 
 +&\frac{(D-1)\mu^\epsilon}{2} \int\frac{d^Dk}{(2\pi)^D}\ln{\left(1+\frac{e^2\varphi_1^2}{k^2}\right)}.
 \end{align}
 This introduces the parameter $\mu$, \smalltodo{more about $\mu$}. \\
-After calculating them in $D$ dimentions we have:
+After calculating the integrals in $D$ dimentions we have:
 \begin{align}
-V_{1L}=&\frac{1}{4}\frac{(\frac{1}{2}\lambda\varphi_1^2)^2}{(4\pi)^2}\left(-\frac{2}{\epsilon}
-+\gamma_E-\frac{3}{2}+\log{\frac{(\frac{1}{2}\lambda\varphi_1^2)^2}{4\pi\mu^2}}\right)  \\
-+&\frac{1}{4}\frac{(\frac{1}{6}\lambda\varphi_1^2)^2}{(4\pi)^2}\left(-\frac{2}{\epsilon}
-+\gamma_E-\frac{3}{2}+\log{\frac{(\frac{1}{6}\lambda\varphi_1^2)^2}{4\pi\mu^2}}\right)  \\
+V_{1L}=&\frac{1}{4}\frac{(12\cl\lambda\varphi_1^2)^2}{(4\pi)^2}\left(-\frac{2}{\epsilon}
++\gamma_E-\frac{3}{2}+\log{\frac{(12\cl\lambda\varphi_1^2)^2}{4\pi\mu^2}}\right)  \\
++&\frac{1}{4}\frac{(4\cl\lambda\varphi_1^2)^2}{(4\pi)^2}\left(-\frac{2}{\epsilon}
++\gamma_E-\frac{3}{2}+\log{\frac{(4\cl\lambda\varphi_1^2)^2}{4\pi\mu^2}}\right)  \\
 +&\frac{1}{4}\frac{3(e^2\varphi_1^2)^2}{(4\pi)^2}\left(-\frac{2}{\epsilon}+\gamma_E
 -\frac{5}{6}+\log{\frac{e^2\varphi^2}{4\pi\mu^2}}\right).
 \end{align}
-\section{}
-The task that is still left, is to 
+\section{To renormalisation}
+The task that is still left, is to mange the infinities that come when we pass to the limit 
+and:
+\begin{itemize} 
+\item take $\Lambda \to \infty$, allowing for arbitrary large $k^2$ in the case of the cut-off
+\item take $\epsilon \to 0$ and returning to $4$ dimentions in the case of DR.
 
+\end{itemize}
+This is the scope of renormalisation and is the main interest of this thesis. 
+Different renormalisation techniques should ... \todo{how this is exactly}
 
-
-
-
-
+It is the goal of this thesis to show wether two of them -- \MSbar and On shell give same results.
 
 
 
