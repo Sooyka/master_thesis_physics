@@ -14,13 +14,16 @@ To calculate on-shell renormalisation we need to calculate self energy.
 However, it turns out, that simple calculation of self energy fails the test of 
 comparison between the zero-momentum limit of the self energy and the second derivative 
 of the effective potential. \\
+
 Namely, it should be safisfied that:
 \begin{equation}\label{second_derivativ_condition}
 \lim\limits_{p^2\to 0}\Sigma(p^2)=\frac{\partial^2V_{eff}}{\partial\varphi_1^2},
 \end{equation}
 \todo{napisać ile wychodzi}
 but it is not the case. \\
+
 Let us show this. \\
+
 We have that:
 \begin{align}
 V_{eff} = 
@@ -71,11 +74,13 @@ So, we see, that indeed:
 \end{equation}
 \section{Introducing explicit VEV}
 There is a solution to this: \\
+
 %However, 
 From the \MSbar considerations, we know that $\Phi$ have non-zero VEV, let us 
 call it $v$. 
 Let us rotate $\Phi$ in such a way, that $\langle\varphi_1\rangle=v$ and $\langle\varphi_2\rangle 
 = 0$, where now $v$ is real. \\
+
 Keeping this in mind, we can rewrite Lagrangian in terms of shifted fields $\varphi_1$, 
 $\varphi_2$ which have both zero VEV, now VEV is explicitly in the Lagrangian:
 \begin{align}\label{no_mass_term}
@@ -162,6 +167,7 @@ Following \cite{Coleman1973} we put the mass counterterm even though initialy th
 was not present in the Lagrangian. We do so, because our theory has no a priory symmetry 
 that would guarantee disapering mass term in renormalised Lagrangian. It will turn out to be 
 crutial in our . \\ 
+
 The Lagrangian with $\dZ$, $\dl$ and $\dm$ counterterms looks like this:
 
 \begin{align}
@@ -221,6 +227,7 @@ We define $M_P^2$ as the second derivative of the tree potential evaluated at VE
 M_P^2 = \frac{\partial^2}{\partial \varphi_1^2}\cl\lambda\varphi_1^4\Big|_{v} = 12\cl\lambda v^2
 \end{equation}
 and we impose, that it does not change after one loop contributions. \\
+
 \section{Partition by order in \texorpdfstring{$e$}{e}}
 Here, we will be interested in only contributions up to order $e^4$. From our \MSbar considerations 
 we can see, that $\lambda$ should be of order $e^4$, that $M_V^2$ should be of order $e^2$ and 
@@ -248,11 +255,13 @@ The divergent part of $T$, $\Sigma$ and $\Sigma'$ are:
 \end{align}
 After subsituing to $\dl$, $\dm$, $\dZ$ and then to $V_R$ we see that $\textrm{div}V_R = 0$, 
 thus renormalisation procedure succeeds in canceling divergences. \\
+
 \section{Resulting effective potential}\label{finitemomentumissue}
 Although full potential is to long to explicitly write in symbolic form, we 
 will present it with some of the numerical values substituted. 
 What we should note, is that in this case renormalized potential have both $\varphi_1^2$ term 
 and $\varphi_1^4$ term, unlike in \cite{Coleman1973}. \\
+
 \todo{diagramy, równania, takie, takie}
 \section{Downsides of this approuch}
 The big downside of this method is that we incorporated the condition of not changing VEV between 

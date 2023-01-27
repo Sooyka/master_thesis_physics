@@ -1,8 +1,17 @@
 % mainfile: ../master_thesis_GW.tex
 \chapter{Technical introduction}
 
+In this chapter we present some general ideas, which summary s included here for e completeness. 
+We also set conventions, so the readder may use this chapter as a reference.
+
 \section{Scalar QED}
+This is the model of our main interest in this thesis, as it is great example of a simple 
+model were radiative symmetry breaking occurs. \\
+
+It is not the case for, for example. ??? \smalltodo \\
+
 This model will be used throughout the whole thesis, unless stated otherwise. \\
+
 For a toy model we choose theory of scalar electrodynamics, described by the Lagrangian:
 \begin{equation}
 \mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+D_\mu\Phi D^\mu\Phi^\dag-\lambda\Phi^4,
@@ -360,15 +369,18 @@ V_{1L}=&\frac{1}{2} \int\frac{d^4k}{(2\pi)^4}\ln{\left(1+\frac{12\cl\lambda\varp
 &\frac{3}{2} \int\frac{d^4k}{(2\pi)^4}\ln{\left(1+\frac{e^2\varphi_1^2}{k^2}\right)}
 \end{align}
 Now, integrals have only singularity at $\varphi_1 = 0$. \\
+
 There are now several ways to perform these integrals. We will present here briefly two of them: 
 cut-off and
 dimentional regularisation (DR). \\
+
 For all of our further calculations in the thesis, we will use DR, 
 but cut-off will apear in \ref{CWchapter} 
 as a method used in \cite{Coleman1973}. \\
 \subsubsection{Cut-off}
 The idea of this method is to restrict the integration to $k^2 \leq \Lambda$, for a 
 parameter $\Lambda$. \\
+
 Integrating \ref{eff_before_reg} up to $\Lambda$ gives:
 \begin{align}
 V_{1L}=
@@ -386,6 +398,7 @@ and if we formally change expresions to $4-2\epsilon$ dimentions.
 It is performed by treating the integral as a linear functional depending on two parameters --
 function and dimention given by some specific formula. Then we can calculate it with our 
 function of interest and $D = 4-2\epsilon$ as arguments.  \\
+
 %$D = 4-2\epsilon$
 After passing to $D=4-2\epsilon$ dimensions the integrals take form: 
 \begin{align}
@@ -396,6 +409,7 @@ V_{1L}=&\frac{\mu^\epsilon}{2} \int\frac{d^Dk}{(2\pi)^D}\ln{\left(1+\frac{12\cl\
 +&\frac{(D-1)\mu^\epsilon}{2} \int\frac{d^Dk}{(2\pi)^D}\ln{\left(1+\frac{e^2\varphi_1^2}{k^2}\right)}.
 \end{align}
 This introduces the parameter $\mu$, \smalltodo{more about $\mu$}. \\
+
 After calculating the integrals in $D$ dimentions we have:
 \begin{align}
 V_{1L}=&\frac{1}{4}\frac{(12\cl\lambda\varphi_1^2)^2}{(4\pi)^2}\left(-\frac{2}{\epsilon}
