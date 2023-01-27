@@ -1,5 +1,57 @@
 % mainfile: ../master_thesis_GW.tex
-\chapter{Introduction -- calculation of the unrenormalized effective potential}
+\chapter{Technical introduction}
+
+\section{Scalar QED}
+This model will be used throughout the whole thesis, unless stated otherwise. \\
+For a toy model we choose theory of scalar electrodynamics, described by the Lagrangian:
+\begin{equation}
+\mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+D_\mu\Phi D^\mu\Phi^\dag-\lambda\Phi^4,
+\end{equation}
+where $\Phi$ is a complex scalar field and the vector field present is $U(1)$ gauge boson. \\
+
+Writing operator $D$ more explicitly it reads:
+\begin{equation}
+\mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+(\partial_\mu\Phi + ieA_\mu\Phi) 
+(\partial^\mu\Phi^\dag-ieA^\mu\Phi^\dag)-\lambda\Phi^4,
+\end{equation}
+
+For the reasons that will be clear in ref{finite momentum} we will write $\Phi$ 
+field as two real scalar fields 
+$\varphi_1$ and $\varphi_2$, such that:
+\begin{equation}
+\Phi = \frac{1}{\sqrt{2}}(\varphi_1+\varphi_2)
+\end{equation}
+Then Lagrangian takes form:
+\begin{align}
+\mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+ \frac{1}{2}(\partial_\mu\varphi_1 - eA_\mu\varphi_2)
+(\partial^\mu\varphi_1 - eA^\mu\varphi_2)  \\
++\frac{1}{2}(\partial_\mu\varphi_2+eA_\mu\varphi_1)(\partial^\mu\varphi_2+eA^\mu\varphi_1) 
+-\frac{1}{4}\lambda(\varphi_1^2+\varphi_2^2)^2,\notag
+\end{align}
+
+which we will write for brevity as:
+\begin{align}
+\mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+ 
+\frac{1}{2}(\partial_\mu\varphi_1 - eA_\mu\varphi_2)^2\\
++\frac{1}{2}(\partial_\mu\varphi_2+eA_\mu\varphi_1)^2
+-\frac{1}{4}\lambda(\varphi_1^2+\varphi_2^2)^2. \notag
+\end{align}
+
+
+For a better track of what is independent of numerical convention, we will also write:
+\begin{align}\label{scalar_electrodynamics}
+\mathcal{L} = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+ 
+\frac{1}{2}(\partial_\mu\varphi_1 - eA_\mu\varphi_2)^2\\
++\frac{1}{2}(\partial_\mu\varphi_2+eA_\mu\varphi_1)^2
+-\cl\lambda(\varphi_1^2+\varphi_2^2)^2, \notag
+\end{align}
+but $\cl = \frac{1}{4}$ everywhere in the thesis if not stated otherwise.
+\section{Effective potential}
+\todo{}
+Some words about what it is and why we are interested in it.
+
+
+\subsection{Calculation of the unrenormalized effective potential}
 
 Tree level potential in our model is:
 \begin{equation}
@@ -314,7 +366,7 @@ dimentional regularisation (DR). \\
 For all of our further calculations in the thesis, we will use DR, 
 but cut-off will apear in \ref{CWchapter} 
 as a method used in \cite{Coleman1973}. \\
-\section{Cut-off}
+\subsubsection{Cut-off}
 The idea of this method is to restrict the integration to $k^2 \leq \Lambda$, for a 
 parameter $\Lambda$. \\
 Integrating \ref{eff_before_reg} up to $\Lambda$ gives:
@@ -328,7 +380,7 @@ V_{1L}=
 \left(\ln\frac{e^2\varphi_c^2}{\Lambda^2}-\frac{1}{2}\right).
 \end{align}
 
-\section{Dimentional regularisation}
+\subsubsection{Dimentional regularisation}
 The idea of this method is to observe, that the divergence is only in four dimentions 
 and if we formally change expresions to $4-2\epsilon$ dimentions. 
 It is performed by treating the integral as a linear functional depending on two parameters --
@@ -353,7 +405,7 @@ V_{1L}=&\frac{1}{4}\frac{(12\cl\lambda\varphi_1^2)^2}{(4\pi)^2}\left(-\frac{2}{\
 +&\frac{1}{4}\frac{3(e^2\varphi_1^2)^2}{(4\pi)^2}\left(-\frac{2}{\epsilon}+\gamma_E
 -\frac{5}{6}+\log{\frac{e^2\varphi^2}{4\pi\mu^2}}\right).
 \end{align}
-\section{To renormalisation}
+\section{Renormalisation of the effective potential}
 The task that is still left, is to mange the infinities that come when we pass to the limit 
 and:
 \begin{itemize} 
@@ -365,6 +417,96 @@ This is the scope of renormalisation and is the main interest of this thesis.
 Different renormalisation techniques should ... \todo{how this is exactly}
 
 It is the goal of this thesis to show wether two of them -- \MSbar and On shell give same results.
+
+
+\subsection{\texorpdfstring{\MSbar}{MS-bar} renormalisation of the effective potential}
+Although the goal of our thesis is to renormalise effective potential on-shell
+
+\MSbar\ renormalisation gives:
+\begin{align}
+V_{R}=&\cl\lambda\varphi_1^4 + \notag \\
++&\frac{1}{4}\frac{(12\cl\lambda\varphi_1^2)^2}{(4\pi)^2}\left(-\frac{3}{2}+ 
+\log{\frac{(12\cl\lambda\varphi_1^2)^2}{\mu^2}}\right)\notag  \\
++&\frac{1}{4}\frac{(4\cl\lambda\varphi_1^2)^2}{(4\pi)^2}\left(-\frac{3}{2}+ 
+\log{\frac{(4\cl\lambda\varphi_1^2)^2}{\mu^2}}\right) \notag \\
++&\frac{1}{4}\frac{3(e^2\varphi_1^2)^2}{(4\pi)^2}\left(-\frac{5}{6}+
+\log{\frac{e^2\varphi_1^2}{\mu^2}}\right).
+\end{align}
+
+Here, as will be apparent in the second, we are interested only in $e^4$ part, so from now on, 
+we will write:
+\begin{align}
+V_{R}=\cl\lambda\varphi_1^4 + \frac{3e^4}{64\pi^2}&\left(-\frac{5}{6}+
+\log{\frac{e^2\varphi_1^2}{\mu^2}}\right)\varphi_1^4.
+\end{align}
+
+We can bind $e$ to $\lambda$ and $v$ at the loop level from the VEV definition:
+\begin{align}
+\DphiI\VR \Big|_v= 0.
+\end{align}
+This gives the condition:
+\begin{align}
+4\cl\lambda v^3-\frac{e^4v^3}{16\pi^2}-\frac{3e^4v^3}{16\pi^2}\log\frac{e^2v^2}{\mu^2}=0.
+\end{align}
+Setting scale parameter $\mu$ to the effective mass of the vector, namely $ev$, we have 
+simpler form of:
+\begin{align}
+4\cl\lambda v^3-\frac{e^4v^3}{16\pi^2}=0.
+\end{align}
+Which gives:
+\begin{align}\label{e4_lambda_MS}
+\lambda = \frac{e^4}{64\cl\pi^2}.
+\end{align}
+Writing potential with this substitutions yields:
+
+\begin{align}\label{MSbar_result}
+V_R = \frac{3e^4}{64\pi^2}\Big(-\frac{1}{2}+\log\frac{\varphi_1^2}{v^2}\Big)\varphi_1^4.
+\end{align}
+This is exactly the same potential as obtained in \cite{Coleman1973} with different renormalisation.
+
+Equations \ref{e4_lambda_MS} is very important in this discussion as it states, that $\lambda$ 
+is of order $e^4$ in our model. This post factum justifies our 
+choice in taking only $e^4$ part, as other part was of order $e^8$. \\
+
+\subsubsection{Physical mass}\label{MSbar physical mass}
+\todo{Zrobić tu audyt merytoryczny}
+We can now also bind square of the physical mass $M_P^2$ as the second derivative of the 
+renormalised effective potential at VEV.
+
+\begin{align}
+M_P^2 = \DphiII\VR \Big|_v = \frac{9e^4}{16\pi^2}\Big(-\frac{1}{2}\Big)v^2+\frac{3e^4v^2}{8\pi^2} 
++\frac{9e^4v^2}{32\pi^2}.
+\end{align}
+This gives that:
+\begin{align}
+M_P^2 = \frac{3e^4v^2}{8\pi^2}.
+\end{align}
+
+From this we have that the ratio between scalar mass $M_P^2$ and vector mass $m(V)^2$ is:
+\begin{align}
+\frac{M_P^2}{m(V)^2} = \frac{\frac{3e^4v^2}{8\pi^2}}{e^2v^2} = \frac{3e^2}{8\pi^2}.
+\end{align}
+
+We can now also express $e^4$ and $\lambda$ in terms of $M_P^2$ and $v$:
+\begin{align}
+e^4 = \frac{8M_P^2\pi^2}{3v^2} \\
+\lambda = \frac{M_P^2}{24\cl v^2}.
+\end{align}
+
+Writing potential in these terms gives:
+\begin{align}
+V_R = \frac{M_P^2}{8v^2}\Big(-\frac{1}{2}+\log\frac{\varphi_1^2}{v^2}\Big)\varphi_1^4.
+\end{align}
+
+\todo{COś o stałym renormalizacji tu napisać}
+
+\subsection{On-shell renormalisation of the effective potential}
+\todo{dac tutaj motywacjąę do on-shell i napisać że to jest główne zagadnienie i że to 
+będzie właśnie zaraz omówione}
+
+
+
+
 
 
 
